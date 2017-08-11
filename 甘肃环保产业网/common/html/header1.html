@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			//收藏本页
+			function AddFavorite(sURL, sTitle) {
+				try {
+					window.external.addFavorite(sURL, sTitle);
+				} catch(e) {
+					try {
+						window.sidebar.addPanel(sTitle, sURL, "");
+					} catch(e) {
+						alert("加入收藏失败，请使用Ctrl+D进行添加");
+					};
+				};
+			};
+
+			//			//收藏设置页面（首页）
+			//			function addToFavorite() {
+			//				var d = "http://www.jsfoot.com/";
+			//				var c = "jsfoot代码素材";
+			//				if(document.all) {
+			//					window.external.AddFavorite(d, c);
+			//				} else {
+			//					if(window.sidebar) {
+			//						window.sidebar.addPanel(c, d, "");
+			//					} else {
+			//						alert("对不起，您的浏览器不支持此操作!\n请您使用菜单栏或Ctrl+D收藏本站。");
+			//					}
+			//				}
+			//			}
+
+			//设为首页
+			function SetHome(obj) {
+				try {
+					obj.style.behavior = 'url(#default#homepage)';
+					obj.setHomePage('http://www.jsfoot.com/');
+				} catch(e) {
+					if(window.netscape) {
+						try {
+							netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+						} catch(e) {
+							alert("抱歉，此操作被浏览器拒绝！\n\n请在浏览器地址栏输入“about:config”并回车然后将[signed.applets.codebase_principal_support]设置为'true'");
+						};
+					} else {
+						alert("抱歉，您所使用的浏览器无法完成此操作。\n\n您需要手动将'http://www.sina.com.cn/'设置为首页。");
+					};
+				};
+			};
+		</script>
+	</head>
+
+	<body>
+		<!--头部-->
+		<header>
+			<div class="header">
+				<div class="header_left">
+					<span>
+						欢迎光临甘肃环保产业网！&nbsp; &nbsp;客服热线：0931-8682726
+					</span>
+				</div>
+				<div class="header_right">
+					<ul>
+						<li>
+							<a href="javascript:void(0);" id="setHomePage" onclick="SetHome(this)" style="behavior:url(#default#homepage);">设为首页</a><span>|</span></li>
+						<li>
+							<a href="javascript:AddFavorite(document.location.href,document.title);">加入收藏</a><span>|</span></li>
+						<li>
+							<a href="">联系我们</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<!--头部-副-->
+		<div class="f-header">
+			<div class="logo">
+				<a href="../../pages/html/index.html"><img src="../images/logo.png" /></a>
+			</div>
+			<div class="search">
+				<div class="search_box">
+					<input type="text" class="search_input" placeholder="2017世界地球日">
+					<input type="button" class="search_btn">
+				</div>
+			</div>
+			<div class="landRegister">
+				<div class="land">
+					<a href="../../land/html/login.html">登陆</a>
+				</div>
+				<div class="register">
+					<a href="../../land/html/reg.html">注册</a>
+				</div>
+
+
+			</div>
+		</div>
+        	
+	</body>
+
+</html>

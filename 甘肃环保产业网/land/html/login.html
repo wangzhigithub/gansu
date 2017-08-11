@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>登陆</title>
+		<link rel="stylesheet" type="text/css" href="../css/login.css" />
+		<script type="text/javascript" src="../../common/js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="../../common/js/jquery.cookie.js" ></script>
+		<script src="../js/login.js"></script>
+	</head>
+
+	<body>
+		<!--头部-->
+		<div class="section login1">
+			<div class="logo">
+				<a href="../../pages/html/index.html">
+					<img src="../images/logo.png" />
+				</a>
+			</div>
+			<span class="text">
+					欢迎登陆
+				</span>
+			<div class="text1">
+				<span>
+						客服电话
+					</span>
+				<br />
+				<span>
+						0931-8682726
+					</span>
+			</div>
+		</div>
+		<!--主体-->
+		<div class="login2">
+			<div class="login2_a">
+				<div class="login2_b">
+					<div class="login2_c">
+						 <!--提示-->
+						<div class="tishi">
+							<img src="../images/tishi.png"/>
+							<span>!用户名不正确</span>
+						</div>
+						
+						<span class="login2_c1">
+					    		用户登陆
+					    	</span>
+						<div class="field field_user">
+							<div class="username"></div>
+							<input type="text" id="username_1" placeholder="用户名/手机号">
+						</div>
+
+						<div class="field field_pwd">
+							<div class="pwd"></div>
+							<input type="password" id="pwd_1" placeholder="密码">
+						</div>
+						<div class="field field_zi">
+							<div class="login_tb_tdl">
+								<input type="checkbox" name="cookietime" value="1" id="ck_rmbUser" checked> 自动登录
+							</div>
+							<div class="login_tb_tdr">
+								<a href="pass-retrieval.html">忘记密码？</a>
+							</div>
+						</div>
+						<div class="field field_deng">
+							<input type="submit" id="denglu" name="submit" value="登陆" onclick="Save()" />
+						</div>
+
+						<div class="field field_quick">
+							<!--<a href="javascript:void(0)" onclick="window.location='//qq.jd.com/new/qq/login.aspx'"  class="pdl">…</a>-->
+							<ul>
+								<li>
+									<a href="#">QQ登陆</a>
+									<span id="">|</span>
+								</li>
+								<li>
+									<a href="#">微信登陆</a>
+								</li>
+								<li>
+									<a href="reg.html" target="_blank">免费注册</a>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!--底部-->
+		<footer>
+			<div class="footer">
+				<div class="footer_t">
+					<ul>
+						<li>
+							<a href="index.html">首页</a>
+							<span>|</span>
+						</li>
+						<li>
+							<a href="">组织机构</a>
+							<span>|</span>
+						</li>
+
+						<li>
+							<a href="">协会简介</a>
+							<span>|</span>
+						</li>
+						<li>
+							<a href="">协会里程碑</a>
+							<span>|</span>
+						</li>
+						<li>
+							<a href="">联系我们</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer_t2">
+					Copyright @ 2017 甘肃省环保产业协会 版权所有
+				</div>
+			</div>
+		</footer>
+        
+	</body>
+
+</html>

@@ -1,0 +1,406 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>协会会员</title>
+		<link rel="stylesheet" type="text/css" href="../css/merber.css" />
+		<script type="text/javascript" src="../../common/js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="../js/merber.js"></script>
+	</head>
+
+	<body ng-app="app">
+		<!--头部-->
+		<header>
+           
+			<div class="header">
+				<div class="header_left">
+					<span>
+						欢迎光临甘肃环保产业网！&nbsp; &nbsp;客服热线：0931-8682726
+					</span>
+				</div>
+				<div class="header_right">
+					<ul>
+						<li>
+							<a href="javascript:void(0);" id="setHomePage" onclick="SetHome(this)" style="behavior:url(#default#homepage);">设为首页</a><span>|</span></li>
+						<li>
+							<a href="javascript:AddFavorite(document.location.href,document.title);">加入收藏</a><span>|</span></li>
+						<li>
+							<a href="">联系我们</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<!--头部-副-->
+		<div class="f-header">
+			<div class="logo">
+				<a href="index.html"><img src="../images/logo.png" /></a>
+			</div>
+			<div class="search">
+				<div class="search_box">
+					<input type="text" class="search_input" placeholder="2017世界地球日">
+					<input type="button" class="search_btn">
+				</div>
+			</div>
+			<div class="landRegister">
+				<div class="land">
+					登陆
+				</div>
+				<div class="register">
+					注册
+				</div>
+			</div>
+		</div>
+		<div class="nav">
+			<div class="nav_box">
+				<div class="nav_box_1 ">
+					<a href="index.html">首页</a>
+				</div>
+				<!--协会信息-->
+				<div class="nav_box_2">
+					<div class="text">
+						<a href="association.html"><span>协会</span><span>信息</span></a>
+					</div>
+					<div class="text1">
+						<ul>
+							<li>
+								<a href="#">通知公告</a>
+							</li>
+							<li>
+							<a href="../../second/html/ass-work.html">协会工作</a>
+							</li>
+							<li>
+								<a href="#">协会动态</a>
+							</li>
+							<li>
+								<a href="#">协会章程</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!--政策咨询-->
+				<div class="nav_box_2">
+					<div class="text text2">
+						<a href="policy.html"><span>政策</span><span>咨询</span></a>
+					</div>
+					<div class="text3">
+						<ul>
+							<li>
+								<a href="#">环保要闻</a>
+							</li>
+							<li>
+								<a href="#">行业前沿</a>
+							</li>
+							<li>
+								<a href="#">政策法规</a>
+							</li>
+							<li>
+								<a href="#">政策解读</a>
+							</li>
+							<li>
+								<a href="#">环保动态</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!--产业技术-->
+				<div class="nav_box_2 ">
+					<div class="text text2">
+						<a href="industry.html"><span>产业</span><span>技术</span></a>
+					</div>
+					<div class="text3">
+						<ul>
+							<li>
+								<a href="#">产业信息</a>
+							</li>
+							<li>
+								<a href="#">科技前沿</a>
+							</li>
+							<li>
+								<a href="#">技术交流</a>
+							</li>
+							<li>
+								<a href="#">国外技术</a>
+							</li>
+							<li>
+								<a href="#">环保贴士</a>
+							</li>
+							<li>
+								<a href="#">专家库</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!--协会会员-->
+				<div class="nav_box_2 nav_box_c">
+					<div class="text text2">
+						<a href="member.html"><span>协会</span><span>会员</span></a>
+					</div>
+					<div class="text1">
+						<ul>
+							<li>
+								<a href="#">会员名录</a>
+							</li>
+							<li>
+								<a href="#">环保产品</a>
+							</li>
+							<li>
+								<a href="#">会员的权利与义务</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!--下载专区-->
+				<div class="nav_box_2">
+					<div class="text text2">
+						<a href="download.html"><span>下载</span><span>专区</span></a>
+					</div>
+					<div class="text4">
+						<ul>
+							<li>
+								<a href="http://www.beidouzhiku.cn/video/list.php?catid=185" target="_blank">环保课堂</a>
+							</li>
+							<li>
+								<a href="#">文件下载</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<!--北斗智库-->
+				<div class="beidou">
+					<a href="http://www.beidouzhiku.cn/" target="_blank"><img src="../images/beidou.png" /></a>
+				</div>
+
+			</div>
+		</div>
+		<!--主体1-->
+		<div class="section">
+			<div class="mem1">
+				<!--上-->
+				<div class="mem1_s ">
+					<div class="mem1_simg">
+						<img src="../images/line_2.png" />
+					</div>
+					<div class="mem1_stext">
+						会员名录
+					</div>
+					<a href="#" class="mem1_sa" target="_blank"></a>
+				</div>
+				<!--下-->
+				<div class="mem1_x">
+					<ul>
+						<li>
+							<a href="#" target="_blank">石家庄煜煌科技有限公司</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">开拓环保科技有限公司</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">甘肃章隆工程项目管理有限公司</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">甘肃广建环保科技有限公司</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">九江市科凡环保科技有限公司</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">甘肃博研环保科技有限公司</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">甘肃汇通环保设备工程有限公司</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">甘肃中检联检测有限公司</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">石家庄章隆工程项目管理有限公司</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">河北胜尔邦环保科技有限公司</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">甘肃博研环保科技有限公司</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">甘肃汇通环保设备工程有限公司</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">开拓环保科技有限公司</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">甘肃众仁检验检测中心</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">邯郸市天空众拓环保科技有限公司</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">甘肃博研环保科技有限公司</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">石家庄煜煌科技有限公司</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">甘肃广建环保科技有限公司</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--主体2-->
+		<div class="section">
+			<div class="mem1 mem2">
+				<!--上-->
+				<div class="mem1_s mem2_s">
+					<div class="mem1_simg">
+						<img src="../images/line_2.png" />
+					</div>
+					<div class="mem1_stext">
+						会员名录
+					</div>
+					<a href="#" class="mem1_sa" target="_blank"></a>
+				</div>
+				<!--下-->
+				<div class="mem2_x">
+					<ul>
+						<li>
+							<a href="#" target="_blank"><img src="../images/mem_03.png" /></a>
+							<p>
+								<a href="#" target="_blank">污水处理搅拌絮凝+斜面体las</a>
+							</p>
+						</li>
+						<li>
+							<a href="#" target="_blank"><img src="../images/mem_05.png" /></a>
+							<p>
+								<a href="#" target="_blank">JM-UVC-450回水中用户啊</a>
+							</p>
+						</li>
+						<li>
+							<a href="" target="_blank"><img src="../images/mem_07.png" /></a>
+							<p>
+								<a href="#" target="_blank">污水处理搅拌絮凝+斜面体las</a>
+							</p>
+						</li>
+						<li>
+							<a href="" target="_blank"><img src="../images/mem_09.png" /></a>
+							<p>
+								<a href="#" target="_blank">JM-UVC-450回水中用户啊</a>
+							</p>
+						</li>
+						<li>
+							<a href="" target="_blank"><img src="../images/mem_11.png" /></a>
+							<p>
+								<a href="#" target="_blank">污水处理搅拌絮凝+斜面体las</a>
+							</p>
+						</li>
+						<li>
+							<a href="" target="_blank"><img src="../images/mem_13.png" /></a>
+							<p>
+								<a href="#" target="_blank">JM-UVC-450回水中用户啊</a>
+							</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--主体3-->
+		<div class="section">
+			<div class="mem3">
+				<img src="../images/mem3.png" />
+			</div>
+		</div>
+		<!--主体4-->
+		<div class="section">
+			<!--左边  产业信息-->
+			<div class="mem4_left ">
+				<div class="mem4_s ">
+					<div class="mem4_simg">
+						<img src="../images/line_2.png" />
+					</div>
+					<div class="mem4_stext">
+						产业信息
+					</div>
+					<a href="#" class="mem4_sa" target="_blank"></a>
+				</div>
+				<div class="mem4_x mem4_x_left">
+					<div class="mem4_x_l">
+						<a href="#" target="_blank"><img src="../images/mem4.png" /></a>
+					</div>
+					<div class="mem4_x_r">
+						<ul>
+							<li>
+								<a href="#" target="_blank">绿色基金撬动环保发展大格局</a>
+							</li>
+							<li>
+								<a href="#" target="_blank">三峰环境亮相第十五届中国国际环保展</a>
+							</li>
+							<li>
+								<a href="#" target="_blank">三天两夜遇见不平凡 用激情和汗水浇灌梦想</a>
+							</li>
+							<li>
+								<a href="" target="_blank">低碳环保先行实践 上海肯德基开始启用分类垃圾箱</a>
+							</li>
+							<li>
+								<a href="" target="_blank">绿色基金撬动环保发展大格局</a>
+							</li>
+							<li>
+								<a href="" target="_blank">三峰环境亮相第十五届中国国际环保展</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--右边 科技前沿-->
+			<div class="mem4_left  mem4_right ">
+				<div class="mem4_s">
+					<div class="mem4_simg">
+						<img src="../images/line_2.png" />
+					</div>
+					<div class="mem4_stext">
+						科技前沿
+					</div>
+					<a href="#" class="mem4_sa" target="_blank"></a>
+				</div>
+				<div class="mem4_x mem4_x_right">
+					<div class="mem4_x_l">
+						<a href="#" target="_blank"><img src="../images/mem5.png" /></a>
+					</div>
+					<div class="mem4_x_r">
+						<ul>
+							<li>
+								<a href="#" target="_blank">绿色基金撬动环保发展大格局</a>
+							</li>
+							<li>
+								<a href="#" target="_blank">三峰环境亮相第十五届中国国际环保展</a>
+							</li>
+							<li>
+								<a href="" target="_blank">三天两夜遇见不平凡 用激情和汗水浇灌梦想</a>
+							</li>
+							<li>
+								<a href="" target="_blank">低碳环保先行实践 上海肯德基开始启用分类垃圾箱</a>
+							</li>
+							<li>
+								<a href="" target="_blank">绿色基金撬动环保发展大格局</a>
+							</li>
+							<li>
+								<a href="" target="_blank">三峰环境亮相第十五届中国国际环保展</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--底部-->
+		<div id="footer"></div>
+		<script>
+			$("#footer").load("../../common/html/footer.html")
+		</script>
+
+	</body>
+
+</html>

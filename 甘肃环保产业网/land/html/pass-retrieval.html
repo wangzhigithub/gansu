@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>密码找回</title>
+		<link rel="stylesheet" type="text/css" href="../css/pass-retrieval.css" />
+		<script type="text/javascript" src="../../common/js/jquery-1.8.3.min.js"></script>
+				<script type="text/javascript" src="../../common/js/gVerify.js"></script>
+		<script src="../js/pass-retrieval.js"></script>
+	</head>
+	<body>
+		<!--头部-->
+		<div class="section reg1">
+			<div class="logo">
+				<a href="../../pages/html/index.html">
+					<img src="../images/logo.png" />
+				</a>
+			</div>
+			<span class="text">
+					找回密码
+				</span>
+			<div class="text1">
+				<span>
+						客服电话
+					</span>
+				<br />
+				<span>
+						0931-8682726
+					</span>
+			</div>
+		</div>
+		
+        <!--主体-->
+        <div class="back_box">
+        	<!--横线-->
+			<div class="reg-heng"></div>
+			<!--1-->
+			<div class="back_ul  back_ul1 " style="display: block;">
+				<ul class="back_header">
+					<li class="first back1">
+						<span>填写用户名</span>
+						<i></i>
+					</li>
+					<li class="two">
+						<span>验证身份</span>
+						<i></i>
+					</li>
+					<li class="three">
+						<span>设置新密码</span>
+						<i></i>
+					</li>
+					<li class="last">
+						<span>完成</span>
+						<i></i>
+					</li>
+				    <div class="back_header_h"></div>
+				</ul>
+				<div class="back_box1">
+					<input type="tel"  id="phone" placeholder="请输入你的用户名/手机号" />
+					<input type="button" name="btn" id="btn" value="下一步" />
+					<div class="tishi" ></div>
+				</div>
+			</div>
+			<!--2-->
+			<div class="back_ul  back_ul2 ">
+				<ul class="back_header" >
+					<li class="first back1">
+						<span>填写用户名</span>
+						<i></i>
+					</li>
+					<li class="two back1">
+						<span>验证身份</span>
+						<i></i>
+					</li>
+					<li class="three">
+						<span>设置新密码</span>
+						<i></i>
+					</li>
+					<li class="last">
+						<span>完成</span>
+						<i></i>
+					</li>
+				    <div class="back_header_h"></div>
+				</ul>
+				<div class="back_box2">
+						<div class="reg_tr back_user">
+							<div class="td1">用户名</div>
+							<div class="td22"></div>
+						</div>
+						<div class="reg_tr back_phone">
+							<div class="td1">手机号</div>
+							<div class="td22"></div>
+						</div>
+						<!--手机验证码-->
+						<div class="reg_tr back_pyan">
+							<div class="td1">手机验证</div>
+							<div class="td2">
+								<input id="yan" type="text" name="yan" placeholder="">
+								<!--图片的验证码-->
+								<h1 id="fasong"  class="text" >获取验证码</h1>
+							</div>
+							<div class="td3"></div>
+						</div>
+						<!--图片验证码-->
+						<div class="reg_tr back_tupin">
+							<div class="td1">图片验证</div>
+							<div class="td2">
+								<input id="tu" type="tel" name="tu" placeholder="">
+								<!--图片的验证码-->
+								<div class="img" id="v_container"></div>
+								
+							</div>
+							<div class="td3"></div>
+						</div>
+						
+						<!--下一步-->
+						<div class="reg_tr ">
+							<div class="td1"></div>
+							<input type="button" name="btn1" id="btn1" value="下一步" />
+						</div>
+				</div>
+			</div>
+			
+			<!--3-->
+			<div class="back_ul  back_ul3 " >
+				<ul class="back_header" >
+					<li class="first back1">
+						<span>填写用户名</span>
+						<i></i>
+					</li>
+					<li class="two back1">
+						<span>验证身份</span>
+						<i></i>
+					</li>
+					<li class="three back1">
+						<span>设置新密码</span>
+						<i></i>
+					</li>
+					<li class="last">
+						<span>完成</span>
+						<i></i>
+					</li>
+				    <div class="back_header_h"></div>
+				</ul>
+				<!--3-->
+				<div class="back_box3">
+						<div class="back_box3_li  back_box3_pas1">
+							<input type="password" name="" id="pass1" placeholder="请输入新密码" />
+							<span class="zhengq"></span>
+							<div class="tishi" ></div>
+						</div>
+						<div class="back_box3_li back_box3_pas2">
+							<input type="password" name="" id="pass2" placeholder="请再次输入新密码" />
+							<span class="zhengq"></span>
+							<div class="tishi" ></div>
+						</div>
+						<div class="back_box3_li back_box3_pas3">
+							<input type="button" name="" id="btn2" value="下一步" />
+						</div>
+				</div>
+			</div>
+			<!--4-->
+			<div class="back_ul  back_ul4 " >
+				<ul class="back_header" >
+					<li class="first back1">
+						<span>填写用户名</span>
+						<i></i>
+					</li>
+					<li class="two back1">
+						<span>验证身份</span>
+						<i></i>
+					</li>
+					<li class="three back1">
+						<span>设置新密码</span>
+						<i></i>
+					</li>
+					<li class="last back1">
+						<span>完成</span>
+						<i></i>
+					</li>
+				    <div class="back_header_h"></div>
+				</ul>
+				<!--4-->
+				<div class="back_box4">
+						<p class="back_box4_li1">
+							恭喜您，密码修改成功！
+						</p>
+						<p class="back_box4_li2">
+							<span class="down">3</span>
+							秒后自动跳转至主页，若未跳转，可 <a href="../../pages/html/index.html">点击跳转</a>
+						</p>
+				</div>
+			</div>
+			
+        </div>
+        
+		
+	</body>
+</html>

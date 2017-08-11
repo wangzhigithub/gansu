@@ -1,0 +1,252 @@
+@charset "utf-8";
+//引用头部
+@import "../../common/css/header";
+.section {
+    width: 1000px;
+    margin: 20px auto;
+    .clearfix();
+}
+
+.login1 {
+    .logo {
+        .fl();
+    }
+    .text {
+        .fl();
+        font-size: 28px;
+        line-height: 80px;
+        margin-left: 30px;
+    }
+    .text1 {
+        .fr();
+        height: 50px;
+        margin-top: 15px;
+        text-align: right;
+        span {
+            .d-ib();
+            line-height: 25px;
+            font-weight: bold;
+        }
+        span:nth-of-type(1) {
+            font-size: 16px;
+            color: #0e59ba;
+        }
+        span:nth-of-type(2) {
+            padding-left: 18px;
+            background: url(../images/login-phone.png)no-repeat left center;
+        }
+    }
+}
+
+.login2 {
+    margin: 20px auto;
+    max-width: 1920px;
+    min-width: 1000px;
+    height: 600px;
+    background: url(../images/login1.png)no-repeat center center;
+    .login2_a {
+        width: 1000px;
+        height: 600px;
+        margin: 0 auto;
+        .pos(r);
+    }
+}
+
+.login2_b {
+    .pos(a);
+    right: -10px;
+    top: 97px;
+    width: 418px;
+    height: 412px;
+    background: url(../images/login2.png);
+}
+
+.login2_c {
+    width: 320px;
+    height: 400px;
+    margin: 4px auto;
+    .pos(r);
+    .login2_c1 {
+        .d-ib();
+        width: 100%;
+        height: 60px;
+        font-size: 20px;
+        line-height: 60px;
+        padding-top: 28px;
+        font-weight: bold;
+    }
+    .field {
+        height: 50px;
+        box-sizing: border-box;
+        width: 100%;
+        .pos(r);
+        .username {
+            display: block;
+            width: 44px;
+            height: 20px;
+            .pos(a);
+            top: 14px;
+            border-right: 1px solid #dddddd;
+            background: url(../images/username.png)no-repeat center center;
+        }
+        #username_1 {
+            width: 255px;
+            font-size: 14px;
+            line-height: 20px;
+            height: 20px;
+            padding: 14px 8px 14px 55px;
+            border: 1px solid #dddddd;
+        }
+        .pwd {
+            display: block;
+            width: 44px;
+            height: 20px;
+            .pos(a);
+            top: 14px;
+            border-right: 1px solid #dddddd;
+            background: url(../images/pwd.png)no-repeat center center;
+        }
+        #pwd_1 {
+            width: 255px;
+            font-size: 14px;
+            line-height: 20px;
+            height: 20px;
+            padding: 14px 8px 14px 55px;
+            border: 1px solid #dddddd;
+        }
+    }
+    .field_pwd {
+        margin-top: 19px;
+    }
+    .field_zi {
+        height: 40px;
+        line-height: 40px;
+        margin-top: 23px;
+        .font-s14();
+        .login_tb_tdl {
+            width: 50%;
+            line-height: 40px;
+            .fl();
+        }
+        .login_tb_tdr {
+            width: 50%;
+            line-height: 40px;
+            .fr();
+            text-align: right;
+            a {
+                color: #333;
+            }
+        }
+    }
+    #denglu {
+        width: 320px;
+        height: 50px;
+        background: #0e59ba;
+        color: #fff;
+        text-align: center;
+        line-height: 50px;
+        .border-radius(2px);
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .field_quick {
+        height: 59px;
+        width: 320px;
+        margin-top: 21px;
+        line-height: 59px;
+        ul {
+            .clearfix();
+        }
+        li {
+            span {
+                font-size: 1px;
+                .d-ib();
+                width: 24px;
+                text-align: center;
+                .fl();
+                color: #b6b6b6;
+            }
+            cursor: pointer;
+            a {
+                color: #b6b6b6;
+                .fl();
+            }
+            .fl();
+            padding-left: 21px;
+            background: url(../images/QQ.png)no-repeat left center;
+        }
+        li:nth-of-type(2) {
+            background: url(../images/weixin.png)no-repeat left center;
+        }
+        li:nth-of-type(3) {
+            padding-left: 19px;
+            .fr();
+            a {
+                color: #0E59BA;
+            }
+            background: url(../images/m2.png)no-repeat left center;
+        }
+    }
+    //提示
+    .tishi {
+        display: none;
+        width: 300px;
+        height: 20px;
+        padding: 10px;
+        color: #ffb4a8;
+        background: #fef2f2;
+        color: #ffb4a8;
+        .pos(a);
+        top: 38px;
+        left: 0;
+        border: 1px solid #ffb4a8;
+        img {
+            width: 14px;
+            height: 14px;
+            .fl();
+            margin-top: 3px;
+        }
+    }
+}
+
+//底部
+footer {
+    width: 100%;
+    height: 120px;
+    padding-top: 40px;
+    box-sizing: border-box;
+}
+
+.footer {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.footer_t {
+    text-align: center;
+    height: 34px;
+    line-height: 34px;
+    .font-s14();
+    color: #999999;
+    ul {
+        .d-ib();
+    }
+    a {
+        color: #999999;
+    }
+    li {
+        .fl();
+        span {
+            width: 1px;
+            margin: 0 17px;
+        }
+    }
+}
+
+.footer_t2 {
+    text-align: center;
+    height: 34px;
+    line-height: 34px;
+    .font-s14();
+    color: #999999;
+}

@@ -1,0 +1,335 @@
+@charset "utf-8";
+//引用头部
+@import "../../common/css/header";
+//引用底部
+@import "../../common/css/footer";
+.section {
+    width: 1100px;
+    margin: 20px auto;
+    .clearfix();
+}
+
+.po1_left {
+    width: 290px;
+    height: 260px;
+    border: 1px solid #eee;
+    .fl();
+    box-sizing: border-box;
+}
+
+.po1_left_s {
+    width: 290px;
+    height: 40px;
+    margin-top: -1px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #eee;
+    .pos(r);
+    &img {
+        width: 6px;
+        height: 40px;
+        .pos(a);
+        left: 0;
+        top: 0;
+        z-index: 100;
+        img {
+            width: 100%;
+        }
+    }
+    &text {
+        .fl();
+        line-height: 40px;
+        color: #0e59ba;
+        .font-s16();
+        font-weight: bold;
+        padding-left: 20px;
+    }
+    &a {
+        width: 52px;
+        height: 12px;
+        .d-ib();
+        .fr();
+        background: url(../images/MORE1.png)left top no-repeat;
+        margin: 14px 20px 14px 0;
+        cursor: pointer;
+        &:hover {
+            background: url(../images/MORE.png)left top no-repeat;
+        }
+    }
+}
+
+.po1_left_x {
+    width: 250px;
+    margin-left: 20px;
+    padding: 12px 0px 11px 0px;
+    box-sizing: border-box;
+    ul {
+        .clearfix();
+    }
+    li {
+        padding-left: 10px;
+        height: 28px;
+        background: url(../images/sanjiao.png) left center no-repeat;
+        line-height: 28px;
+        max-width: 250px;
+        a {
+            color: #333;
+            .d-ib();
+            width: 240px;
+            .ellipsis-basic();
+            &:hover {
+                text-decoration: underline;
+                color: #cc6600;
+            }
+        }
+        span {
+            .d-ib();
+            .fr();
+            color: #999999;
+            .font-s14();
+        }
+    }
+}
+
+//中间
+.po1_center {
+    width: 480px;
+    height: 260px;
+    .fl();
+    margin-left: 20px;
+    img {
+        .fl();
+    }
+}
+
+//右边
+.po1_right {
+    .fl();
+    margin-left: 20px;
+}
+
+//主体2
+.po2 {
+    width: 1100px;
+    height: 120px;
+    img {
+        width: 1100px;
+        .fl();
+    }
+}
+
+//主体3
+.po3 {
+    width: 1100px;
+    height: 268px;
+    border: 1px solid #eee;
+    .fl();
+    box-sizing: border-box;
+    .clearfix();
+}
+
+.po3_s {
+    width: 1100px;
+    height: 40px;
+    margin-top: -1px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #eee;
+    .pos(r);
+    &img {
+        width: 6px;
+        height: 40px;
+        .pos(a);
+        left: 0;
+        top: 0;
+        z-index: 100;
+        img {
+            width: 100%;
+        }
+    }
+    &text {
+        .fl();
+        line-height: 40px;
+        color: #0e59ba;
+        .font-s16();
+        font-weight: bold;
+        padding-left: 20px;
+    }
+    &a {
+        width: 52px;
+        height: 12px;
+        .d-ib();
+        .fr();
+        background: url(../images/MORE1.png)left top no-repeat;
+        margin: 14px 20px 14px 0;
+        cursor: pointer;
+        &:hover {
+            background: url(../images/MORE.png)left top no-repeat;
+        }
+    }
+}
+
+.po3_x1 {
+    .fl();
+    width: 520px;
+    padding: 7px 0 13px 20px;
+    P {
+        width: 100%;
+        height: 42px;
+        line-height: 42px;
+        .font-s16();
+        box-sizing: border-box;
+        font-weight: bold;
+        color: #333333;
+        padding-left: 17px;
+        background: url(../images/po3_1.png) no-repeat left center;
+    }
+}
+
+.po3_x1_l {
+    width: 180px;
+    height: 166px;
+    margin-right: 20px;
+    .fl();
+    img {
+        .fl();
+        margin-top: 7px;
+    }
+}
+
+.po3_x1_r {
+    width: 320px;
+    padding-right: 11px;
+    box-sizing: border-box;
+    .fl();
+    ul {
+        .clearfix();
+    }
+    li {
+        padding-left: 10px;
+        height: 28px;
+        background: url(../images/sanjiao.png) left center no-repeat;
+        line-height: 28px;
+        max-width: 309px;
+        a {
+            color: #333;
+            .d-ib();
+            max-width: 299px;
+            .ellipsis-basic();
+            &:hover {
+                text-decoration: underline;
+                color: #cc6600;
+            }
+        }
+        span {
+            .d-ib();
+            .fr();
+            color: #999999;
+            .font-s14();
+        }
+    }
+}
+
+.po3_x2 {
+    .fl();
+    margin-left: 18px;
+}
+
+//主体4
+.po4_left {
+    width: 540px;
+    height: 232px;
+    .fl();
+    border: 1px solid #eee;
+    box-sizing: border-box; 
+}
+
+.po4_s {
+    width: 540px;
+    height: 40px;
+    margin-top: -1px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #eee;
+    .pos(r);
+    &img {
+        width: 6px;
+        height: 40px;
+        .pos(a);
+        left: 0;
+        top: 0;
+        z-index: 100;
+        img {
+            width: 100%;
+        }
+    }
+    &text {
+        .fl();
+        line-height: 40px;
+        color: #0e59ba;
+        .font-s16();
+        font-weight: bold;
+        padding-left: 20px;
+    }
+    &a {
+        width: 52px;
+        height: 12px;
+        .d-ib();
+        .fr();
+        background: url(../images/MORE1.png)left top no-repeat;
+        margin: 14px 20px 14px 0;
+        cursor: pointer;
+        &:hover {
+            background: url(../images/MORE.png)left top no-repeat;
+        }
+    }
+}
+
+.po4_x {
+    .fl();
+    width: 520px;
+    padding: 13px 0 13px 20px;
+    .po4_x_l {
+        width: 180px;
+        height: 166px;
+        margin-right: 20px;
+        .fl();
+        img {
+            .fl();
+            margin-top: 7px;
+        }
+    }
+}
+
+.po4_x_r {
+    width: 320px;
+    padding-right: 11px;
+    box-sizing: border-box;
+    .fl();
+    ul {
+        .clearfix();
+    }
+    li {
+        padding-left: 10px;
+        height: 28px;
+        background: url(../images/sanjiao.png) left center no-repeat;
+        line-height: 28px;
+        max-width: 309px;
+        a {
+            color: #333;
+            .d-ib();
+            max-width: 299px;
+            .ellipsis-basic();
+            &:hover {
+                text-decoration: underline;
+                color: #cc6600;
+            }
+        }
+        span {
+            .d-ib();
+            .fr();
+            color: #999999;
+            .font-s14();
+        }
+    }
+}
+.po4_right{
+    margin-left: 20px;
+}

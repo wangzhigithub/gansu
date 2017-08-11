@@ -1,0 +1,1069 @@
+@charset "utf-8";
+//引用头部
+@import "../../common/css/header";
+//引用底部
+@import "../../common/css/footer";
+
+
+//主体
+.section {
+    width: 1100px;
+    margin: 20px auto;
+    height: 260px;
+     .clearfix();
+}
+
+.section_left {
+    width: 320px;
+    height: 260px;
+    .fl();
+    .clearfix();
+}
+
+#slider-wrap {
+    width: 320px;
+    height: 260px;
+}
+
+
+/*可以修改宽高*/
+
+#slider {
+    position: relative;
+    width: 320px;
+    height: 260px;
+    background: #FFF;
+}
+
+
+/*可以修改宽高*/
+
+#slider img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 320px;
+    height: 230px;
+}
+
+
+/*可以修改宽高*/
+
+.nivoSlider {
+    position: relative;
+    overflow: hidden;
+}
+
+.nivoSlider img {
+    position: absolute;
+    top: 0px;
+    left: 0px
+}
+
+.nivoSlider a.nivo-imageLink {
+    position: absolute;
+    top: 0px;
+    display: block;
+    left: 0px;
+    width: 320px;
+    height: 260px;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    z-index: 6;
+}
+
+
+/*可以修改宽高*/
+
+.nivoSlider p {
+    width: 320px !important;
+    height: 30px !important;
+    border: 1px solid #eee;
+    line-height: 28px;
+    .font-s14();
+    font-weight: bold;
+    color: #333;
+    .pos(a);
+    left: 0;
+    bottom: 0;
+    padding: 0 17px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+.nivo-slice {
+    display: block;
+    position: absolute;
+    z-index: 5;
+    height: 100%;
+}
+
+.nivo-box {
+    display: block;
+    position: absolute;
+    z-index: 5;
+}
+
+.nivo-caption {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 320px;
+    z-index: 50;
+    height: 40px;
+}
+
+
+/*可以修改宽高*/
+
+.nivo-caption p {
+    width: 320px;
+    height: 40px;
+    text-indent: -9999px
+}
+
+
+/*可以修改宽高*/
+
+.nivo-controlNav {
+    position: absolute;
+    right: 12px;
+    bottom: 40px;
+    z-index: 100;
+}
+
+
+/*可以修改左右上下间距*/
+
+.nivo-controlNav a {
+    position: relative;
+    z-index: 99;
+    cursor: pointer;
+    background: #fff;
+    opacity: 0.4;
+}
+
+.nivo-controlNav a.active {
+    background: #fff;
+    font-weight: bold;
+    opacity: 1;
+}
+
+.nivo-controlNav a {
+    display: block;
+    color: #fff;
+    width: 8px;
+    height: 8px;
+    text-align: center;
+    margin-right: 8px;
+    float: left;
+    overflow: hidden;
+}
+
+
+/*可以修改宽高*/
+
+.nivo-directionNav a {
+    position: absolute;
+    top: 45%;
+    z-index: 9;
+    cursor: pointer;
+}
+
+
+/*左右切换按钮，不能删除，如果不需要可以设背景，删除会引起图片错位*/
+
+.nivo-directionNav a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    text-indent: -9999px;
+    border: 0;
+    img{
+        width: 320px;
+        height: 230px;
+    }
+}
+
+a.nivo-nextNav {
+    right: 15px;
+}
+
+a.nivo-prevNav {
+    left: 15px;
+}
+
+//中间
+.section_in {
+    width: 480px;
+    height: 260px;
+    border: 1px solid #eee;
+    .fl();
+    margin-left: 20px;
+    box-sizing: border-box;
+}
+
+.section_in_s {
+    width: 478px;
+    height: 39px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #eee;
+     background: #f6f7f7;  
+    .pos(r);
+    &img {
+        width: 6px;
+        height: 40px;
+        .pos(a);
+         left: -1px;
+        top: -1px;
+        z-index: 100;
+        img {
+            width: 100%;
+        }
+    }
+    &text {
+        .fl();
+        line-height: 39px;
+        color: #0e59ba;
+        .font-s16();
+        font-weight: bold;
+        padding-left: 20px;
+    }
+    &a {
+        width: 52px;
+        height: 12px;
+        .d-ib();
+        .fr();
+        background: url(../images/MORE1.png)left top no-repeat;
+        margin: 14px 20px 14px 0;
+        cursor: pointer;
+        &:hover {
+            background: url(../images/MORE.png)left top no-repeat;
+        }
+    }
+}
+
+.section_in_z {
+    width: 440px;
+    height: 90px;
+    margin: 0 20px;
+    border-bottom: 1px dashed #ddd;
+    .section_in_z1 {
+        width: 100%;
+        height: 42px;
+        line-height: 37px;
+        text-align: center;
+        font-weight: bold;
+        .font-s16();
+        box-sizing: border-box;
+        padding: 5px 10px 0 10px;
+        .ellipsis-basic();
+        a {
+            color: #2ead66;
+        }
+    }
+    .section_in_z2 {
+        color: #a9a9a9;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        .font-s12();
+        span {
+            line-height: 18px;
+        }
+        a {
+            color: #0e59ba;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.section_in_x {
+    width: 440px;
+    margin: 0 20px;
+    padding: 6px 0px 11px 0px;
+    box-sizing: border-box;
+    ul {
+        .clearfix();
+    }
+    li {
+        padding-left: 10px;
+        height: 28px;
+        background: url(../images/sanjiao.png) left center no-repeat;
+        line-height: 28px;
+        a {
+            color: #333;
+            .d-ib();
+            max-width: 380px;
+            .ellipsis-basic();
+            &:hover {
+                text-decoration: underline;
+                color: #cc6600;
+            }
+        }
+        span {
+            .d-ib();
+            .fr();
+            color: #999999;
+            .font-s14();
+        }
+    }
+}
+
+//右边
+.section_right {
+    width: 260px;
+    height: 260px;
+    border: 1px solid #eee;
+    .fl();
+    margin-left: 20px;
+    box-sizing: border-box;
+}
+
+.section_right_s {
+    width: 260px;
+}
+
+.section_right_x {
+    width: 210px;
+    padding: 12px 0 11px 0px;
+    li {
+        a {
+            width: 210px;
+        }
+    }
+}
+
+//主体2 环保新闻和证书查询
+.section2 {
+    height: 250px;
+}
+
+//左边
+.section2_left_box {
+    width: 320px;
+    height: 70px;
+    background: url(../images/zizhi.png)left top no-repeat;
+    cursor: pointer;
+    a {
+        .d-ib();
+       width: 100%;      
+       height: 70px;
+    }
+}
+
+.section2_left_box2 {
+    margin-top: 20px;
+    background: url(../images/jishu.png)left top no-repeat;
+}
+
+.section2_left_box3 {
+    margin-top: 20px;
+    background: url(../images/zjia.png)left top no-repeat;
+}
+
+//中间
+.section2_in {
+    height: 250px;
+}
+
+.section2_in_z {
+    width: 440px;
+    height: 107px;
+    margin: 0 20px;
+    padding: 5px 0 10px 0;
+    box-sizing: border-box;
+    .section2_in_zimg {
+        width: 120px;
+        height: 80px;
+        margin-top: 9px;
+        margin-right: 14px;
+        .fl();
+        img {
+            .d-i();
+        }
+    }
+    &text {
+        width: 306px;
+        .fl();
+        .text1 {
+            width: 100%;
+            height: 35px;
+            line-height: 35px;
+            .ellipsis-basic();
+            .font-s16();
+            font-weight: bold;
+            a {
+                color: #333;
+            }
+        }
+        .text2 {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+            .font-s12();
+            line-height: 18px;
+            color: #a9a9a9;
+            a {
+                color: #0e59ba;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+//右边
+.section2_in_s {
+    width: 260px;
+}
+
+.section2_right_x {
+    padding: 19px 20px;
+}
+
+.section2_right {
+    height: 250px;
+}
+
+.section2_right_x1 {
+    width: 220px;
+    height: 32px;
+    .border-radius(2px);
+    border: 1px solid #eeeeee;
+     padding: 0 3px;
+    box-sizing: border-box;
+
+}
+
+.section2_right_x2 {
+    width: 220px;
+    height: 32px;
+    .border-radius(2px);
+    border: 1px solid #eeeeee;
+    margin-top: 10px;
+    padding: 0 3px;
+
+}
+
+.section2_right_x3 {
+    width: 220px;
+    height: 32px;
+    .border-radius(2px);
+    border: 1px solid #eeeeee;
+    margin-top: 10px;
+    padding: 0 5px;
+    box-sizing: border-box;
+}
+
+.section2_right_x4 {
+    width: 220px;
+    height: 40px;
+    .border-radius(2px);
+    margin-top: 14px;
+    text-align: center;
+    line-height: 40px;
+    background: #ddd;
+    .font-s16();
+    cursor: pointer;
+}
+
+//图片广告
+.section_tu {
+    width: 1100px;
+    height: 120px;
+    margin: 10px auto;
+    a {
+        .fl();
+        img {
+            .d-ib();
+            .fr();
+        }
+    }
+    a:nth-of-type(2) {
+        .fr();
+    }
+}
+
+//主体3 z政策法规和产业信息和科学学会
+.section3_left {
+    width: 320px;
+    height: 260px;
+    border: 1px solid #eee;
+    .fl();
+    box-sizing: border-box;
+}
+
+.section3_left_s {
+    width: 318px;
+    height: 39px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #eee;
+    background: #f6f7f7;   
+    .pos(r);
+    &img {
+        width: 6px;
+        height: 40px;
+        .pos(a);
+          left: -1px;
+        top: -1px;
+        z-index: 100;
+        img {
+            width: 100%;
+        }
+    }
+    &text {
+        .fl();
+        line-height: 39px;
+        color: #0e59ba;
+        .font-s16();
+        font-weight: bold;
+        padding-left: 20px;
+    }
+    &a {
+        width: 52px;
+        height: 12px;
+        .d-ib();
+        .fr();
+        background: url(../images/MORE1.png)left top no-repeat;
+        margin: 14px 20px 14px 0;
+        cursor: pointer;
+        &:hover {
+            background: url(../images/MORE.png)left top no-repeat;
+        }
+    }
+}
+
+.section3_left_x {
+    width: 280px;
+    margin: 0 20px;
+    padding: 6px 0px 11px 0px;
+    box-sizing: border-box;
+    ul {
+        .clearfix();
+    }
+    li {
+        padding-left: 10px;
+        height: 28px;
+        background: url(../images/sanjiao.png) left center no-repeat;
+        line-height: 28px;
+        width: 280px;
+        a {
+            color: #333;
+            .d-ib();
+            width: 280px;
+            .ellipsis-basic();
+            &:hover {
+                text-decoration: underline;
+                color: #cc6600;
+            }
+        }
+        span {
+            .d-ib();
+            .fr();
+            color: #999999;
+            .font-s14();
+        }
+    }
+}
+
+.section3_in {
+    width: 480px;
+    height: 260px;
+    border: 1px solid #eee;
+    .fl();
+    margin-left: 20px;
+    box-sizing: border-box;
+}
+
+.section3_in_s {
+    width: 478px;
+    height: 39px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #eee;
+    background: #f6f7f7;   
+    .pos(r);
+    &img {
+        width: 6px;
+        height: 40px;
+        .pos(a);
+        left: -1px;
+        top: -1px;
+        z-index: 100;
+        img {
+            width: 100%;
+        }
+    }
+    &text {
+        .fl();
+        line-height: 39px;
+        color: #0e59ba;
+        .font-s16();
+        font-weight: bold;
+        padding-left: 20px;
+    }
+    &a {
+        width: 52px;
+        height: 12px;
+        .d-ib();
+        .fr();
+        background: url(../images/MORE1.png)left top no-repeat;
+        margin: 14px 20px 14px 0;
+        cursor: pointer;
+        &:hover {
+            background: url(../images/MORE.png)left top no-repeat;
+        }
+    }
+}
+
+.section3_in_x {
+    width: 100%;
+    padding: 12px 0 11px 0px;
+    .clearfix();
+    .section3_in_x1 {
+        .fl();
+        width: 120px;
+        padding: 8px 20px 9px 20px;
+        div {
+            width: 120px;
+            height: 80px;
+        }
+        a {
+            .d-ib();
+            img {
+                .fl();
+            }
+        }
+        div:nth-of-type(2) {
+            margin-top: 20px;
+        }
+    }
+    .section3_in_x2 {
+        .fl();
+        width: 302px;
+        padding: 0px 16px 0px 0px;
+        ul {
+            .clearfix();
+        }
+        li {
+            padding-left: 10px;
+            height: 28px;
+            background: url(../images/sanjiao.png) left center no-repeat;
+            line-height: 28px;
+            a {
+                color: #333;
+                .d-ib();
+                max-width: 302px;
+                .ellipsis-basic();
+                &:hover {
+                    text-decoration: underline;
+                    color: #cc6600;
+                }
+            }
+            span {
+                .d-ib();
+                .fr();
+                color: #999999;
+                .font-s14();
+            }
+        }
+    }
+}
+
+.section3_right {
+    width: 260px;
+    height: 260px;
+    border: 1px solid #eee;
+    .fl();
+    margin-left: 20px;
+    box-sizing: border-box;
+}
+
+.section3_right_s {
+    width: 258px;
+    height: 39px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #eee;
+    background: #f6f7f7;   
+    .pos(r);
+    &img {
+        width: 6px;
+        height: 40px;
+        .pos(a);
+        left: -1px;
+        top: -1px;
+        z-index: 100;
+        img {
+            width: 100%;
+        }
+    }
+    &text {
+        .fl();
+        line-height: 39px;
+        color: #0e59ba;
+        .font-s16();
+        font-weight: bold;
+        padding-left: 20px;
+    }
+    &a {
+        width: 52px;
+        height: 12px;
+        .d-ib();
+        .fr();
+        background: url(../images/MORE1.png)left top no-repeat;
+        margin: 14px 20px 14px 0;
+        cursor: pointer;
+        &:hover {
+            background: url(../images/MORE.png)left top no-repeat;
+        }
+    }
+}
+
+//右边 科学学会-
+.section3_right_x {
+    width: 210px;
+    padding: 12px 0 11px 0px;
+    margin: 0 20px;
+    box-sizing: border-box;
+    ul {
+        .clearfix();
+    }
+    li {
+        padding-left: 10px;
+        height: 28px;
+        background: url(../images/sanjiao.png) left center no-repeat;
+        line-height: 28px;
+        a {
+            color: #333;
+            .d-ib();
+            max-width: 210px;
+            .ellipsis-basic();
+            &:hover {
+                text-decoration: underline;
+                color: #cc6600;
+            }
+        }
+        span {
+            .d-ib();
+            .fr();
+            color: #999999;
+            .font-s14();
+        }
+    }
+}
+
+//主体4协会会员
+.section4 {
+    width: 1100px;
+    height: 200px;
+    margin: 0 auto;
+    border: 1px solid #eee;
+    box-sizing: border-box;
+}
+
+.section4_s {
+    width: 1098px;
+    height: 39px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #eee;
+    background: #f6f7f7;   
+    .pos(r);
+    &img {
+        width: 6px;
+        height: 40px;
+        .pos(a);
+        left: -1px;
+        top: -1px;
+        z-index: 100;
+        img {
+            width: 100%;
+        }
+    }
+    &text {
+        .fl();
+        line-height: 39px;
+        color: #0e59ba;
+        .font-s16();
+        font-weight: bold;
+        padding-left: 20px;
+    }
+    .swiper-button-next {
+        box-sizing: border-box;
+        width: 24px;
+        height: 24px;
+        .pos(a);
+        right: 20px;
+        top: 8px;
+        margin-top: 0;
+        border: 1px solid #ccc;
+        background-size: 7px 10px;
+        cursor: pointer;
+        background: url(../images/b_you.png) no-repeat center center !important;
+        &:hover {
+            background: url(../images/b_you1.png)no-repeat center center !important;
+        }
+    }
+    .swiper-button-prev {
+        box-sizing: border-box;
+        width: 24px;
+        height: 24px;
+        .pos(a);
+        left: 1024px;
+        top: 8px;
+        margin-top: 0;
+        border: 1px solid #ccc;
+        background-size: 7px 10px;
+        cursor: pointer;
+        background: url(../images/b_zou.png)no-repeat center center !important;
+        &:hover {
+            background: url(../images/b_zou1.png)no-repeat center center !important;
+        }
+    }
+}
+.swiper-container{
+    max-height: 159px !important;
+    .swiper-wrapper{
+         max-height: 159px !important;
+    }
+    
+}
+//主体5 环保贴士和会员活动和环保产品
+//轮播
+.banner {
+    width: 1100px;
+    height: 159px !important;
+    box-sizing: border-box;
+    padding: 20px 19px 0 3px;
+    ul {
+        .d-ib();
+    }
+    li {
+        .fl();
+        margin-left: 15px;
+        width: 164px;
+    }
+    .img1 {
+        width: 164px;
+        height: 100px;
+        background: #f5f5f5;
+        text-align: center;
+        /*非IE的主流浏览器识别的垂直居中的方法*/
+        display: table-cell;
+        vertical-align: middle;
+        /*设置水平居中*/
+        text-align: center;
+        /* 针对IE的Hack */
+        *display: block;
+        *font-size: 175px;
+        /*约为高度的0.873，200*0.873 约为175*/
+        *font-family: Arial;
+        /*防止非utf-8引起的hack失效问题，如gbk编码*/
+    }
+    .box img {
+        /*设置图片垂直居中*/
+        vertical-align: middle;
+        a {
+            .d-ib();
+        }
+        img {
+            .fl();
+        }
+    }
+    p {
+        .font-s12();
+        height: 32px;
+        line-height: 32px;
+        text-align: center;
+        a {
+            color: #333;
+            &:hover {
+                color: #CC6600;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+//主体6 科技前沿和专家库和技术交流
+.section5_in_x {
+    width: 100%;
+    height: 219px;
+    padding: 20px 20px 0 8px;
+    box-sizing: border-box;
+    ul {
+        .d-ib();
+    }
+    li {
+        .fl();
+        margin-left: 12px;
+        a {
+            color: #333;
+            &:hover {
+                text-decoration: underline;
+                color: #CC6600;
+            }
+        }
+        p {
+            max-width: 138px;
+            line-height: 24px;
+            text-align: center;
+            .ellipsis-basic();
+        }
+        p:nth-of-type(1) {
+            margin-top: 6px;
+            font-weight: bold;
+            .font-s14()
+        }
+        p:nth-of-type(2) {
+            .font-s12()
+        }
+    }
+}
+
+//主体7 文件下载
+.section7 {
+    width: 1100px;
+    margin: 20px auto;
+    height: 200px;
+    border: 1px solid #eee;
+}
+
+.section7_s {
+    width: 1098px;
+    height: 39px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #eee;
+    background: #f6f7f7;   
+    .pos(r);
+    &img {
+        width: 6px;
+        height: 40px;
+        .pos(a);
+        left: -1px;
+        top: -1px;
+        z-index: 100;
+        img {
+            width: 100%;
+        }
+    }
+    &text {
+        .fl();
+        line-height: 39px;
+        color: #0e59ba;
+        .font-s16();
+        font-weight: bold;
+        padding-left: 20px;
+    }
+    &a {
+        width: 52px;
+        height: 12px;
+        .d-ib();
+        .fr();
+        background: url(../images/MORE1.png)left top no-repeat;
+        margin: 14px 20px 14px 0;
+        cursor: pointer;
+        &:hover {
+            background: url(../images/MORE.png)left top no-repeat;
+        }
+    }
+}
+
+.section7_x {
+    width: 1100px;
+    height: 160px;
+}
+
+.section7_x_text {
+    padding: 9px 50px 0 20px;
+    height: 45px;
+    line-height: 45px;
+    span {
+        .font-s14();
+        color: #333;
+        font-weight: bold;
+        .d-ib();
+        .fl();
+    }
+    span:nth-of-type(1) {
+        width: 70px;
+    }
+    span:nth-of-type(2) {
+        width: 419px;
+    }
+    span:nth-of-type(3) {
+        width: 160px;
+    }
+    span:nth-of-type(4) {
+        width: 133px;
+    }
+    span:nth-of-type(5) {
+        width: 168px;
+    }
+    span:nth-of-type(6) {
+        width: 80px;
+        text-align: center;
+    }
+}
+
+.section7_x_ul {
+    .d-ib();
+    padding: 0px 50px 0 20px;
+    li {
+        height: 31px;
+        line-height: 31px;
+        .font-s14();
+        span {
+            color: #333;
+            .d-ib();
+            .fl();
+        }
+        span:nth-of-type(1) {
+            width: 70px;
+            height: 31px;
+            img {
+                width: 17px;
+                height: 19px;
+                margin: 6px 0 0 5px;
+                .fl();
+            }
+        }
+        span:nth-of-type(2) {
+            width: 419px;
+            a{
+                color: #333;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+        span:nth-of-type(3) {
+            width: 160px;
+        }
+        span:nth-of-type(4) {
+            width: 133px;
+        }
+        span:nth-of-type(5) {
+            width: 168px;
+        }
+        span:nth-of-type(6) {
+            width: 80px;
+            img {
+                width: 80px;
+                height: 24px;
+                margin-top: 3px;
+                .fl();
+            }
+        }
+    }
+}

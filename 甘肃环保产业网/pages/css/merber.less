@@ -1,0 +1,236 @@
+@charset "utf-8";
+//引用头部
+@import "../../common/css/header";
+//引用底部
+@import "../../common/css/footer";
+.section {
+    width: 1100px;
+    margin: 20px auto;
+    .clearfix();
+}
+
+//主体1
+.mem1 {
+    width: 1100px;
+    height: 232px;
+    .fl();
+    border: 1px solid #eee;
+    box-sizing: border-box;
+}
+
+.mem1_s {
+    width: 1098px;
+    height: 39px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #eee;
+    background: #f6f7f7;
+    .pos(r);
+    &img {
+        width: 6px;
+        height: 39px;
+        .pos(a);
+        left: -1px;
+        top: -1px;
+        z-index: 100;
+        img {
+            width: 100%;
+        }
+    }
+    &text {
+        .fl();
+        line-height: 39px;
+        color: #0e59ba;
+        .font-s16();
+        font-weight: bold;
+        padding-left: 20px;
+    }
+    &a {
+        width: 52px;
+        height: 12px;
+        .d-ib();
+        .fr();
+        background: url(../images/MORE1.png)left top no-repeat;
+        margin: 14px 20px 14px 0;
+        cursor: pointer;
+        &:hover {
+            background: url(../images/MORE.png)left top no-repeat;
+        }
+    }
+}
+
+.mem1_x {
+    padding: 12px 0 11px 0;
+    ul {
+        .clearfix();
+    }
+    li {
+        .fl();
+        margin-left: 19.333px;
+        width: 330px;
+        height: 28px;
+        line-height: 28px;
+        padding-left: 11px;
+        box-sizing: border-box;
+        .font-s14();
+        .ellipsis-basic();
+        background: url(../images/hedian.png)no-repeat left center;
+        a {
+            color: #333;
+            &:hover {
+                text-decoration: underline;
+                color: #cc6600;
+            }
+        }
+    }
+}
+
+//主体2
+.mem2 {
+    height: 240px;
+}
+
+.mem2_x {
+    width: 100%;
+    padding: 20px 19px 5px 19px;
+    ul {
+        .clearfix();
+    }
+    li {
+        width: 160px;
+        height: 174px;
+        .fl();
+        margin-left: 20px;
+        >a {
+            .clearfix();
+           .d-ib();
+           width: 160px;
+           height: 130px;
+            img {
+                .fl();
+            }
+        }
+        p{
+            .ellipsis-basic();
+            line-height: 44px;
+            a{
+                color: #333;
+                &:hover{
+                    text-decoration: underline;
+                color: #cc6600;
+                }
+            }
+        }
+        
+    }
+    li:nth-of-type(1) {
+        margin-left: 0;
+    }
+}
+//主体3
+.mem3{
+    width: 100%;height: 120px;
+    img{
+        .fl();
+    }
+}
+//主体4
+.mem4_left {
+    width: 540px;
+    height: 232px;
+    .fl();
+    border: 1px solid #eee;
+    box-sizing: border-box;
+}
+
+.mem4_s {
+    width: 538px;
+    height: 39px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #eee;
+     background: #f6f7f7;   
+    .pos(r);
+    &img {
+        width: 6px;
+        height: 40px;
+        .pos(a);
+        left: -1px;
+        top: -1px;
+        z-index: 100;
+        img {
+            width: 100%;
+        }
+    }
+    &text {
+        .fl();
+        line-height: 39px;
+        color: #0e59ba;
+        .font-s16();
+        font-weight: bold;
+        padding-left: 20px;
+    }
+    &a {
+        width: 52px;
+        height: 12px;
+        .d-ib();
+        .fr();
+        background: url(../images/MORE1.png)left top no-repeat;
+        margin: 14px 20px 14px 0;
+        cursor: pointer;
+        &:hover {
+            background: url(../images/MORE.png)left top no-repeat;
+        }
+    }
+}
+
+.mem4_x {
+    .fl();
+    width: 520px;
+    padding: 13px 0 13px 20px;
+    .mem4_x_l {
+        width: 180px;
+        height: 166px;
+        margin-right: 20px;
+        .fl();
+        img {
+            .fl();
+            margin-top: 7px;
+        }
+    }
+}
+
+.mem4_x_r {
+    width: 320px;
+    padding-right: 11px;
+    box-sizing: border-box;
+    .fl();
+    ul {
+        .clearfix();
+    }
+    li {
+        padding-left: 10px;
+        height: 28px;
+        background: url(../images/sanjiao.png) left center no-repeat;
+        line-height: 28px;
+        width: 290px;
+        a {
+            color: #333;
+            .d-ib();
+             width: 290px;
+             .ellipsis-basic();
+            &:hover {
+                text-decoration: underline;
+                color: #cc6600;
+            }
+        }
+        span {
+            .d-ib();
+            .fr();
+            color: #999999;
+            .font-s14();
+        }
+    }
+}
+
+.mem4_right {
+    margin-left: 20px;
+}

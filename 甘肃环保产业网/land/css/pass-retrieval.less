@@ -1,0 +1,337 @@
+@charset "utf-8";
+//引用头部
+@import "../../common/css/header";
+.section {
+    width: 1000px;
+    margin: 20px auto;
+    .clearfix();
+}
+
+.reg1 {
+    .logo {
+        .fl();
+    }
+    .text {
+        .fl();
+        font-size: 28px;
+        line-height: 80px;
+        margin-left: 30px;
+    }
+    .text1 {
+        .fr();
+        height: 50px;
+        margin-top: 15px;
+        text-align: right;
+        span {
+            .d-ib();
+            line-height: 25px;
+            font-weight: bold;
+        }
+        span:nth-of-type(1) {
+            font-size: 16px;
+            color: #0e59ba;
+        }
+        span:nth-of-type(2) {
+            padding-left: 18px;
+            background: url(../images/login-phone.png)no-repeat left center;
+        }
+    }
+}
+//横线
+.reg-heng {
+    width: 1000px;
+    height: 4px;
+    background: #0e59ba;
+    .pos(a);
+    top: -1px;
+    left: -1px;    
+}
+
+//主体
+.back_box{
+    width: 1000px;
+    height: 606px;
+    border: 1px solid #ddd;
+    margin-top: -1px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    .pos(r);
+    .border-radius(@radius: 3px)
+}
+
+.back_ul{
+    width: 800px;
+    height: 400px;
+    margin: 100px auto;
+    .pos(r);
+    display: none;
+    ul{
+        .clearfix();
+    }
+    li{
+        width: 200px;
+        .fl();
+        .pos(r);
+        span{
+            .d-ib();
+            text-align: center;
+            width: 200px;
+            height: 29px;font-size: 16px;
+            color: #dcdcdc;
+        }
+        i{
+            .d-ib();
+            width: 14px;
+            height: 14px;
+            .border-radius(@radius: 7px);
+            background: #dcdcdc;
+            .pos(a);
+            top: 29px;
+            left: 50%;
+            margin-left: -7px;
+           z-index: 100;
+        }
+        
+    }
+    
+    .back_header_h{
+        width: 614px;
+        height: 2px;
+        background: #ddd;
+        .pos(a);
+        top: 36px;
+        left: 50%;
+        margin-left: -307px;
+        z-index: 50;
+    }
+}
+
+.back1{
+     i{
+        background: #0E59BA !important;
+    }
+    span{
+        color: #0E59BA !important;
+    }
+}
+
+//1
+.back_box1{
+    width: 410px;
+    height: 40px;
+    .pos(r);
+    margin: 0 auto;
+    margin-top: 131px;
+    #phone{
+        width: 300px;
+        height: 40px;
+        border: 1px solid #ddd;
+        box-sizing: border-box;
+        .fl();
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+    #btn{
+        width: 100px;
+        height: 40px;
+        background: #eeeeee;
+        color: #333;
+        text-align: center;
+        line-height: 40px;
+        .fr();
+        cursor: pointer;
+    }
+    .tishi{
+        .pos(a);
+        left: 0px;
+        top: 40px;
+        width: 280px;
+        height: 30px;
+        line-height: 30px;
+        color: red;
+        padding-left: 20px;
+        background: url(../images/tishi.png) no-repeat left center;
+        display: none;
+        font-size: 12px;
+    }
+}
+
+//2
+
+.back_box2 {
+    width: 470px;
+    margin: 0 auto;
+    margin-top:60px ;
+    
+    .reg_tr {
+        margin-top: 30px;
+        width: 100%;
+        height: 40px;
+        .pos(r);
+        .td1 {
+            width: 123px;
+            height: 40px;
+            box-sizing: border-box;
+            font-size: 16px;
+            line-height: 40px;
+            padding: 0 11px 0 0;
+            text-align: right;
+            .fl();
+        }
+        .td22{
+            width: 288px;
+            height: 39px;
+            color: #333;
+            font-weight: bold;
+             .fl();
+             line-height: 37px;
+             padding-left: 10px;
+             box-sizing: border-box;
+        }
+        .td2 {
+            width: 288px;
+            height: 39px;
+            border: 1px solid #ddd;
+            .fl();
+            .pos(r);
+            input {
+                width: 83%;
+                box-sizing: border-box;
+                padding: 11.5px 10px;
+            }
+            #tu,
+            #yan {
+                width: 40%;
+            }
+            .img {
+                width: 100px;
+                height: 34px;
+                margin-top: 2px;
+                margin-right: 2px;
+                .fr();
+            }
+            .text {
+                margin-top: 2px;
+                margin-right: 2px;
+                width: 100px;
+                height: 34px;
+                background: #eeeeee;
+                color: black;
+                .fr();
+                text-align: center;
+                line-height: 34px;
+                .font-s14();
+                cursor: pointer;
+                font-weight: 100;
+            }
+        }
+        .td3 {
+            .pos(a);
+            left: 123px;
+            top: 40px;
+            width: 280px;
+            height: 30px;
+            line-height: 30px;
+            color: red;
+            padding-left: 20px;
+            background: url(../images/tishi.png)no-repeat left center;
+            display: none;
+            font-size: 12px;
+        }
+        
+        #btn1{
+            width: 288px;
+            height: 39px;
+        background: #eeeeee;
+        color: #333;
+        text-align: center;
+        line-height: 40px;
+        .fl();
+        cursor: pointer;
+        }
+        
+    }
+
+}
+
+
+//3
+.back_box3{
+    width: 300px;
+    height: 210px;
+    margin: 0 auto;
+    margin-top: 60px;
+    .back_box3_li{
+        margin-top: 30px;
+        width: 298px;
+        height: 38px;
+        border: 1px solid #ddd;
+        .pos(r);
+        input{
+             width: 298px;
+            height: 38px;
+            padding: 0 10px;
+            box-sizing: border-box;
+        }
+        span {
+                display: none;
+                .pos(a);
+                right: 10px;
+                top: 11.5px;
+                width: 16px;
+                height: 16px;
+                background: url(../images/tishi2.png);
+            }
+       .tishi{
+            .pos(a);
+            left: 0px;
+            top: 40px;
+            width: 280px;
+            height: 30px;
+            line-height: 30px;
+            color: red;
+            padding-left: 20px;
+            background: url(../images/tishi.png) no-repeat left center;
+            display: none;
+            font-size: 12px;
+        }
+        
+    }
+    
+    .back_box3_pas3{
+        input{
+            background: #0E59BA;
+            color: #fff;
+            .border-radius(2px);
+            cursor: pointer;
+        }
+    } 
+}
+
+//4
+.back_box4{
+    width: 320px;
+    height: 170px;
+    margin: 0 auto;
+    margin-top: 118px;
+    .back_box4_li1{
+        width: 100%;
+        padding-left: 98px;
+        box-sizing: border-box;
+        background: url(../images/daduihao.png)no-repeat left center;
+        font-size: 20px;
+        font-weight: bold;
+        color: #333;
+        height: 70px;
+        line-height: 70px;
+    }
+    .back_box4_li2{
+        width: 100%;
+        height: 100px;
+        line-height: 100px;
+        color: #999999;
+        a{
+            color: #0E59BA;
+        }
+    }
+}

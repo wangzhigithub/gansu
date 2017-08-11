@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>协会信息</title>
+		<link rel="stylesheet" type="text/css" href="../../common/css/idangerous.swiper.css" />
+		<link rel="stylesheet" type="text/css" href="../css/association.css" />
+		<script type="text/javascript" src="../../common/js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="../../common/js/idangerous.swiper.min.js"></script>
+		<script type="text/javascript" src="../js/association.js"></script>
+		
+	</head>
+
+	<body ng-app="app">
+		<!--头部-->
+		<header>
+			<div class="header">
+				<div class="header_left">
+					<span>
+						欢迎光临甘肃环保产业网！&nbsp; &nbsp;客服热线：0931-8682726
+					</span>
+				</div>
+				<div class="header_right">
+					<ul>
+						<li>
+							<a href="javascript:void(0);" id="setHomePage" onclick="SetHome(this)" style="behavior:url(#default#homepage);">设为首页</a><span>|</span></li>
+						<li>
+							<a href="javascript:AddFavorite(document.location.href,document.title);">加入收藏</a><span>|</span></li>
+						<li>
+							<a href="">联系我们</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<!--头部-副-->
+		<div class="f-header">
+			<div class="logo">
+				<a href="index.html"><img src="../images/logo.png" /></a>
+			</div>
+			<div class="search">
+				<div class="search_box">
+					<input type="text" class="search_input" placeholder="2017世界地球日">
+					<input type="button" class="search_btn">
+				</div>
+			</div>
+			<div class="landRegister">
+				<div class="land">
+					登陆
+				</div>
+				<div class="register">
+					注册
+				</div>
+			</div>
+		</div>
+		<div class="nav">
+			<div class="nav_box">
+				<div class="nav_box_1 ">
+					<a href="index.html">首页</a>
+				</div>
+				<!--协会信息-->
+				<div class="nav_box_2 nav_box_c">
+					<div class="text">
+						<a href="association.html"><span>协会</span><span>信息</span></a>
+					</div>
+					<div class="text1">
+						<ul>
+							<li>
+								<a href="#">通知公告</a>
+							</li>
+							<li>
+								<a href="../../second/html/ass-work.html">协会工作</a>
+							</li>
+							<li>
+								<a href="#">协会动态</a>
+							</li>
+							<li>
+								<a href="#">协会章程</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!--政策咨询-->
+				<div class="nav_box_2">
+					<div class="text text2">
+						<a href="policy.html"><span>政策</span><span>咨询</span></a>
+					</div>
+					<div class="text3">
+						<ul>
+							<li>
+								<a href="#">环保要闻</a>
+							</li>
+							<li>
+								<a href="#">行业前沿</a>
+							</li>
+							<li>
+								<a href="#">政策法规</a>
+							</li>
+							<li>
+								<a href="#">政策解读</a>
+							</li>
+							<li>
+								<a href="#">环保动态</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!--产业技术-->
+				<div class="nav_box_2">
+					<div class="text text2">
+						<a href="industry.html"><span>产业</span><span>技术</span></a>
+					</div>
+					<div class="text3">
+						<ul>
+							<li>
+								<a href="#">产业信息</a>
+							</li>
+							<li>
+								<a href="#">科技前沿</a>
+							</li>
+							<li>
+								<a href="#">技术交流</a>
+							</li>
+							<li>
+								<a href="#">国外技术</a>
+							</li>
+							<li>
+								<a href="#">环保贴士</a>
+							</li>
+							<li>
+								<a href="#">专家库</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!--协会会员-->
+				<div class="nav_box_2">
+					<div class="text text2">
+						<a href="member.html"><span>协会</span><span>会员</span></a>
+					</div>
+					<div class="text1">
+						<ul>
+							<li>
+								<a href="#">会员名录</a>
+							</li>
+							<li>
+								<a href="#">环保产品</a>
+							</li>
+							<li>
+								<a href="#">会员的权利与义务</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!--下载专区-->
+				<div class="nav_box_2 ">
+					<div class="text text2 ">
+						<a href="download.html"><span>下载</span><span>专区</span></a>
+					</div>
+					<div class="text4">
+						<ul>
+							<li>
+								<a href="http://www.beidouzhiku.cn/video/list.php?catid=185" target="_blank">环保课堂</a>
+							</li>
+							<li>
+								<a href="#">文件下载</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<!--北斗智库-->
+				<div class="beidou">
+					<a href="http://www.beidouzhiku.cn/" target="_blank"><img src="../images/beidou.png" /></a>
+				</div>
+
+			</div>
+		</div>
+
+		<!--主体1-->
+		<div class="section" style="margin-top: 25px;height: 290px;">
+			<div class="ass1-l device">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<a href="#" target="_blank"><img src="../images/ass-banner1.png" /></a>
+							<p class="yin">
+								<a href="" target="_blank">第44个“国际环境日”上海环保产业主题活动</a>
+							</p>
+						</div>
+						<div class="swiper-slide">
+							<a href="#" target="_blank"><img src="../images/ass-banner1.png" /></a>
+							<p class="yin">
+								<a href="" target="_blank">第45个“国际环境日”上海环保产业主题活动</a>
+							</p>
+						</div>
+						<div class="swiper-slide">
+							<a href="#" target="_blank"><img src="../images/ass-banner1.png" /></a>
+							<p class="yin">
+								<a href="" target="_blank">第46个“国际环境日”上海环保产业主题活动</a>
+							</p>
+						</div>
+						<div class="swiper-slide">
+							<p class="yin">
+								<a href="" target="_blank">第47个“国际环境日”上海环保产业主题活动</a>
+							</p>
+						</div>
+						<div class="swiper-slide"> 
+							<a href="#" target="_blank"><img src="../images/ass-banner1.png" /></a>
+							<p class="yin">
+								<a href="" target="_blank">第48个“国际环境日”上海环保产业主题活动</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="pagination"></div>
+			</div>
+
+			<!--右边-->
+			<div class="ass1_r">
+				<div class="ass1_r_s ">
+					<div class="ass1_r_simg">
+						<img src="../images/line_2.png" />
+					</div>
+					<div class="ass1_r_stext">
+						通知公告
+					</div>
+					<a href="#" class="ass1_r_sa" target="_blank"></a>
+
+				</div>
+				<div class="ass1_r_x ">
+					<ul>
+						<li>
+							<a href="" target="_blank">绿色基金撬动环保发展大格局</a>
+						</li>
+						<li>
+							<a href=""target="_blank">三峰环境亮相第十五届中国国际环保展</a>
+						</li>
+						<li>
+							<a href="" target="_blank">三天两夜遇见不平凡 用激情和汗水浇灌梦想</a>
+						</li>
+						<li>
+							<a href="" target="_blank">低碳环保先行实践 上海肯德基开始启用分类垃圾箱</a>
+						</li>
+						<li>
+							<a href="" target="_blank">绿色基金撬动环保发展大格局</a>
+						</li>
+						<li>
+							<a href="" target="_blank">三峰环境亮相第十五届中国国际环保展</a>
+						</li>
+						<li>
+							<a href=""target="_blank">三天两夜遇见不平凡 用激情和汗水浇灌梦想</a>
+						</li>
+						<li>
+							<a href="" target="_blank">三峰环境亮相第十五届中国国际环保展</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!--主体2-->
+		<div class="section" style="height: 120px;">
+			<div class="ass2">
+				<img src="../images/ass-img2.png" />
+			</div>
+		</div>
+
+		<!--主体3-->
+		<div class="section" style="height: 683px;">
+			<!--左边-->
+			<div class="ass3_left">
+				<div class="ass3_left_s ">
+					<div class="ass3_left_simg">
+						<img src="../images/line_2.png" />
+					</div>
+					<div class="ass3_left_stext">
+						协会动态
+					</div>
+					<a href="#" class="ass3_left_sa" target="_blank"></a>
+
+				</div>
+				<div class="ass3_left_x ">
+					<ul>
+						<li>
+							<div class="ass3_left_ximg">
+								<a href="" target="_blank"><img src="../images/ass-img3.png" /></a>
+							</div>
+							<div class="ass3_left_xtext">
+								<div class="h ass3_color">
+									<p><a href="#" target="_blank">中国可持续环境修复大会盛大召开</a></p>
+									<img src="../images/shoucang.png" />
+								</div>
+								<div class="ass3_f">
+									<p class="ass3_f1">
+										自“循环经济”被提出以来提出以来，我国各省市和地区不断发力，试图在循环经济方面谋求进一步的发展。但目前，我国的循环经济仍存在众多问题。高耗能、高污染、不可再生资源使用等问题亟须解决。我国的循环经济与发达国家仍有很大差距
+									</p>
+									<p class="ass3_f2">
+										2017-07-06
+									</p>
+								</div>
+
+							</div>
+						</li>
+						<li>
+							<div class="ass3_left_ximg">
+								<a href="#" target="_blank"><img src="../images/ass-img4.png" /></a>
+							</div>
+							<div class="ass3_left_xtext">
+								<div class="h ">
+									<p><a href="#" target="_blank">三峰环境亮相第十五届中国国际环保展</a></p>
+									<img src="../images/shoucang.png" />
+								</div>
+								<div class="ass3_f">
+									<p class="ass3_f1">
+										自“循环经济”被提出以来提出以来，我国各省市和地区不断发力，试图在循环经济方面谋求进一步的发展。但目前，我国的循环经济仍存在众多问题。高耗能、高污染、不可再生资源使用等问题亟须解决。我国的循环经济与发达国家仍有很大差距
+									</p>
+									<p class="ass3_f2">
+										2017-07-06
+									</p>
+								</div>
+
+							</div>
+						</li>
+						<li>
+							<div class="ass3_left_ximg">
+								<a href="#" target="_blank"><img src="../images/ass-img5.png" /></a>
+							</div>
+							<div class="ass3_left_xtext">
+								<div class="h ">
+									<p><a href="#" target="_blank">东江环保设立产业并购基金加速并购扩张力促产业</a></p>
+									<img src="../images/shoucang.png" />
+								</div>
+								<div class="ass3_f">
+									<p class="ass3_f1">
+										自“循环经济”被提出以来提出以来，我国各省市和地区不断发力，试图在循环经济方面谋求进一步的发展。但目前，我国的循环经济仍存在众多问题。高耗能、高污染、不可再生资源使用等问题亟须解决。我国的循环经济与发达国家仍有很大差距
+									</p>
+									<p class="ass3_f2">
+										2017-07-06
+									</p>
+								</div>
+
+							</div>
+						</li>
+						<li>
+							<div class="ass3_left_ximg">
+								<a href="#" target="_blank"><img src="../images/ass-img6.png" /></a>
+							</div>
+							<div class="ass3_left_xtext">
+								<div class="h " >
+									<p><a href="#" target="_blank">世界环境日 北京现代与您共建绿色家园</a></p>
+									<img src="../images/shoucang.png" />
+								</div>
+								<div class="ass3_f">
+									<p class="ass3_f1">
+										自“循环经济”被提出以来提出以来，我国各省市和地区不断发力，试图在循环经济方面谋求进一步的发展。但目前，我国的循环经济仍存在众多问题。高耗能、高污染、不可再生资源使用等问题亟须解决。我国的循环经济与发达国家仍有很大差距
+									</p>
+									<p class="ass3_f2">
+										2017-07-06
+									</p>
+								</div>
+
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<!--右边-->
+			<div class="ass3_right">
+				<!--协会工作-->
+				<div class="ass1_r ass3_r_x1">
+					<div class="ass1_r_s ">
+						<div class="ass1_r_simg">
+							<img src="../images/line_2.png" />
+						</div>
+						<div class="ass1_r_stext">
+							协会工作
+						</div>
+					</div>
+					<div class="ass3_r_xx ">
+						<ul>
+							<li>
+								<a href="../../second/html/ass-work.html?nub=1" target="_blank">组织机构</a>
+							</li>
+							<li>
+								<a href="../../second/html/ass-work.html?nub=2" target="_blank">协会简介</a>
+							</li>
+							<li>
+								<a href="../../second/html/ass-work.html?nub=3"target="_blank">协会里程碑</a>
+							</li>
+							<li>
+								<a href="../../second/html/ass-work.html?nub=4" target="_blank">联系我们</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+						
+				<!--协会章程-->
+				<div class="ass1_r ass3_r_x2">
+					<div class="ass1_r_s ">
+						<div class="ass1_r_simg">
+							<img src="../images/line_2.png" />
+						</div>
+						<div class="ass1_r_stext">
+							协会章程
+						</div>
+						<a href="#" class="ass1_r_sa" target="_blank"></a>
+
+					</div>
+					<div class="ass1_r_x ass3_r_x22">
+						 <div class="ass3_r_x2img">
+						 	<p>
+						 		<a href="" target="_blank">环保产业协会举办2017年第一期污废水处理</a>
+						 	</p>
+						 	 <a href="" target="_blank"><img src="../images/ass3-img2.png" alt="" /></a>
+						 </div>
+						<ul>
+							<li>
+								<a href="" target="_blank">省人大调研组将开展环保产业调研</a>
+							</li>
+							<li>
+								<a href=""target="_blank">室内非居住环境PM2.5污染调研启动仪式</a>
+							</li>
+							<li>
+								<a href=""target="_blank">第九届制造服务外包中国自贸区国际论坛</a>
+							</li>
+							<li>
+								<a href=""target="_blank">全国环境保护产业协会工作会在京召开</a>
+							</li>
+							<li>
+								<a href=""target="_blank">室内非居住环境PM2.5污染调研启动仪式</a>
+							</li>
+							<li>
+								<a href=""target="_blank">第九届制造服务外包中国自贸区国际论坛</a>
+							</li>
+							<li>
+								<a href=""target="_blank">全国环境保护产业协会工作会在京召开</a>
+							</li>
+							<li>
+								<a href=""target="_blank">全国环境保护产业协会工作会在京召开</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--底部-->
+			<div id="footer"></div>
+		<script> $("#footer").load("../../common/html/footer.html")</script>
+	</body>
+
+</html>
