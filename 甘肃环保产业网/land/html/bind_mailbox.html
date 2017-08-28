@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="pragma" content="no-cache">
+		<meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+		<meta http-equiv="expires" content="Wed, 26 Feb 1997 08:21:57 GMT">
+		<title>绑定邮箱</title>
+		<link rel="stylesheet" type="text/css" href="../css/bind_mailbox.css" />
+		<script type="text/javascript" src="../../common/js/jquery-1.8.3.min.js"></script>
+		<script src="../../common/js/gVerify.js"></script>
+		<script type="text/javascript" src="../js/bind_mailbox.js"></script>
+		<!--<script src="https://cdn.bootcss.com/angular.js/1.4.6/angular.min.js"></script>-->
+	</head>
+
+	<body ng-app="app">
+		<!--头部-->
+		<div id="header"></div>
+		<!--横线-->
+		<div class="heng"></div>
+
+		<!--小介绍-->
+
+		<div class="nav_xiao">
+			您的位置：
+			<a href="../../pages/html/index.html">首页</a>
+			-
+			<a class="xiehui1">个人中心</a>
+
+		</div>
+
+		<!--主体-->
+		<div class="personal">
+			<div class="personal_l">
+				<div class="personal_l_ul">
+					<span>账号管理</span>
+					<ul>
+						<li class="juxing">
+							<a href="per_information.html">基本信息</a>
+						</li>
+						<li>
+							<a href="bind_mailbox.html">资料修改</a>
+						</li>
+						<li>
+							<a href="modify_password.html">密码修改</a>
+						</li>
+						<li>
+							<a href="bind_mobile.html">绑定手机</a>
+						</li>
+					</ul>
+				</div>
+				<div class="personal_l_ul">
+					<span>信息管理</span>
+					<ul>
+						<li>
+							<a href="my_news.html">我的消息</a>
+						</li>
+						<li >
+							<a href="my_collection.html">我的收藏</a>
+						</li>
+						<li>
+							<a href="my_download.html">我的下载</a>
+						</li>
+					</ul>
+				</div>
+				<div class="personal_l_ul">
+					<span>协会会员</span>
+					<ul>
+						<li>
+							<a href="membership.html">入会申请</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="personal_r personal_r1">
+				<div class="personal_r_h">
+					您正在为账号 <span>admin</span> 绑定邮箱
+				</div>
+				<div class="personal_r_x">
+					<div class="personal_rbox personal_rbox_email">
+						<div class="td1">邮&nbsp;&nbsp;箱</div>
+						<div class="td2">
+							<input id="email" type="text" name="mobile">
+							<span></span>
+						</div>
+						<div class="td3">
+
+						</div>
+					</div>
+					<div class="personal_rbox personal_rbox_tupin">
+						<div class="td1">验证码</div>
+						<div class="td2">
+							<input id="tu" type="tel" name="tu" placeholder="">
+							<span></span>
+							<!--图片的验证码-->
+							<div class="img" id="v_container">
+
+							</div>
+						</div>
+
+						<div class="td3"></div>
+					</div>
+
+					<div class="personal_rbox personal_rbox _tupin">
+						<div class="td1"></div>
+
+						<input type="button" id="fasong" value="发送验证邮件" />
+					</div>
+				</div>
+
+				<div class="personal_r_x2" style="display: none;">
+					<div class="personal_x2box">
+						<p class="personal_x2box1">已发送验证邮件至：<span>15012345678@126.com</span></span>
+						</p>
+						<p>验证邮件24小时内有效，请尽快登录您的邮箱点击验证链接完成验证。</p>
+					</div>
+					<div id="yanzheng">查看验证邮件</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="kongdiv"></div>
+		<!--底部-->
+		<div id="footer"></div>
+		<script>
+			$("#footer").load("../../common/html/footer1.html")
+		</script>
+	</body>
+
+</html>

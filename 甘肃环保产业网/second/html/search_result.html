@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>搜索结果</title>
+		<link rel="stylesheet" type="text/css" href="../css/search_result.css" />
+		<script type="text/javascript" src="../../common/js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="../js/search_result.js"></script>
+		<script src="https://cdn.bootcss.com/angular.js/1.4.6/angular.min.js"></script>
+	</head>
+
+	<body ng-app="app">
+		<!--头部-->
+		<div id="header"></div>
+		<!--导航-->
+		<div class="nav">
+			<div class="nav_box">
+				<div class="nav_box_1 ">
+					<a href="../../pages/html/index.html">首页</a>
+				</div>
+				<!--协会信息-->
+				<div class="nav_box_2 ">
+					<div class="text">
+						<a href="../../pages/html/association.html"><span>协会</span><span>信息</span></a>
+					</div>
+					<div class="text1">
+						<ul>
+							<li>
+								<a href="#">通知公告</a>
+							</li>
+							<li>
+								<a href="ass-work.html?nub=1">协会工作</a>
+							</li>
+							<li >
+								<a href="list-details.html">协会动态</a>
+							</li>
+							<li>
+								<a href="#">协会章程</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!--政策咨询-->
+				<div class="nav_box_2 ">
+					<div class="text text2">
+						<a href="../../pages/html/policy.html"><span>政策</span><span>咨询</span></a>
+					</div>
+					<div class="text3">
+						<ul>
+							<li>
+								<a href="#">环保要闻</a>
+							</li>
+							<li>
+								<a href="#">行业前沿</a>
+							</li>
+							<li>
+								<a href="#">政策法规</a>
+							</li>
+							<li>
+								<a href="#">政策解读</a>
+							</li>
+							<li>
+								<a href="#">环保动态</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!--产业技术-->
+				<div class="nav_box_2">
+					<div class="text text2">
+						<a href="../../pages/html/industry.html"><span>产业</span><span>技术</span></a>
+					</div>
+					<div class="text3">
+						<ul>
+							<li>
+								<a href="#">产业信息</a>
+							</li>
+							<li>
+								<a href="#">科技前沿</a>
+							</li>
+							<li>
+								<a href="#">技术交流</a>
+							</li>
+							<li>
+								<a href="#">国外技术</a>
+							</li>
+							<li>
+								<a href="#">环保贴士</a>
+							</li>
+							<li>
+								<a href="expert.html">专家库</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!--协会会员-->
+				<div class="nav_box_2">
+					<div class="text text2">
+						<a href="../../pages/html/member.html"><span>协会</span><span>会员</span></a>
+					</div>
+					<div class="text1">
+						<ul>
+							<li>
+								<a href="#">会员名录</a>
+							</li>
+							<li>
+								<a href="product.html">环保产品</a>
+							</li>
+							<li>
+								<a href="#">会员的权利与义务</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!--下载专区-->
+				<div class="nav_box_2">
+					<div class="text text2">
+						<a href="../../pages/html/download.html"><span>下载</span><span>专区</span></a>
+					</div>
+					<div class="text4">
+						<ul>
+							<li>
+								<a href="http://www.beidouzhiku.cn/video/list.php?catid=185" target="_blank">环保课堂</a>
+							</li>
+							<li>
+								<a href="download.html">文件下载</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<!--北斗智库-->
+				<div class="beidou">
+					<a href="http://www.beidouzhiku.cn/" target="_blank"><img src="../images/beidou.png" /></a>
+				</div>
+
+			</div>
+		</div>
+		<!--小介绍-->
+		<div class="nav_xiao">
+			您的位置：
+			<a href="../../pages/html/index.html">首页</a>
+			-
+			<a class="xiehui1" href="../../pages/html/association.html">站内搜索</a>
+			-
+			<a class="xiehui2" >关键词"<span>环保</span>"的搜索结果</a>
+		</div>
+		<!--列表-->
+		<div class="list_box">
+			<div class="list_boxl">
+				<div class="pageBox">
+					<ul class="pageDiv ">
+
+					</ul>
+					<div class="notContent ">
+						无数据
+					</div>
+					<div class="page">
+						<ul class="pageMenu clearfix">
+							<li class="firstPage">首页</li>
+							<li class="prevPage">
+								< 上一页 </li>
+									<div class="pageObj "></div>
+									<li class="nextPage"> 下一页 > </li>
+									<li class="lastPage">尾页</li>
+									<li class="last" style="font-size: 14px;">
+										共<span class="totalPage"></span>页，跳转至 <input type="number" class="keuInput" value="1">
+										<button type="button" class="btnSure">确定</button>
+									</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="list_boxr" ng-controller='Ctrl'>
+				<!--上-->
+				<div class="list_boxr_wen">
+					<div class="list_boxr_wen1 ">
+						<div class="list_boxr_wen1text">
+							热门文章
+						</div>
+					</div>
+					<div class="list_boxr_wen2 ">
+						<ul>
+							<li ng-repeat="x in txt| limitTo: 8">
+								<a href="{{x.href}}" target="_blank">{{x.title}}</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!--中-->
+				<div class="list_boxr_z">
+					<img src="../images/list_1.png" />
+				</div>
+
+				<!--下-->
+				<div class="list_boxr_wen">
+					<div class="list_boxr_wen1 ">
+						<div class="list_boxr_wen1text">
+							环保要闻
+						</div>
+					</div>
+					<div class="list_boxr_wen2 ">
+						<ul>
+							<li ng-repeat="x in txt| limitTo: 8">
+								<a href="{{x.href}}" target="_blank">{{x.title}}</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="clear" style="clear: both;"></div>
+		</div>
+
+		<!--底部-->
+		<div id="footer"></div>
+		<script>
+			$("#footer").load("../../common/html/footer1.html")
+		</script>
+
+	</body>
+
+</html>

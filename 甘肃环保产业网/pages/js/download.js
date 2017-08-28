@@ -1,5 +1,30 @@
 $(function() {
+    
+        //用angualr的请求数据的话 相对来说比较简单,我只是做了主体1其他的没有做
+	(function() {
+		var app = angular.module('app', []);
+		
 
+
+//		文件下载
+		app.controller('Ctrl1', function($scope, $http, $rootScope) {
+
+			$http({
+				url: "../download.json",
+				mettod: 'get'
+			}).then(function(data) {
+				$scope.text = data.data.data;
+//				$scope.txt1 = data.data[0].data.list;
+                				
+
+			})
+
+		})
+		
+	})();
+   
+    
+    
 });
 
 //收藏本页

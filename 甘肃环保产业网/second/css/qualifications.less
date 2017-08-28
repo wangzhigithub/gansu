@@ -1,0 +1,227 @@
+@charset "utf-8";
+//引用头部
+@import "../../common/css/header";
+//引用底部
+@import "../../common/css/footer";
+.heng {
+    width: 100%;
+    height: 3px;
+    background: #0e59ba;
+}
+
+//小介绍
+.nav_xiao {
+    width: 1100px;
+    margin: 0 auto;
+    line-height: 52px;
+    font-size: 12px;
+    a {
+        color: #333;
+    }
+}
+
+.ass_box {
+    width: 1100px;
+    margin: 0 auto;
+    min-height: 530px;
+    .ass_box_ul {
+        .clearfix();
+    }
+}
+
+.ass_ull {
+    width: 218px;
+    .fl();
+    border: 1px solid #ddd;
+    border-bottom: 0;
+    .ass_ull_1 {
+        width: 218px;
+        height: 39px;
+        border-bottom: 1px solid #ddd;
+        font-weight: bold;
+        font-size: 18px;
+        color: #0E59BA;
+        padding-left: 19px;
+        box-sizing: border-box;
+        line-height: 39px;
+        background: #f4f4f4;
+    }
+    ul {
+        .clearfix();
+        span {
+            .d-ib();
+            width: 218px;
+            height: 51px;
+            border-bottom: 1px solid #ddd;
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+              padding-left: 19px;
+                  box-sizing: border-box;
+                  line-height: 50px;
+        }
+    }
+    li {
+        cursor: pointer;
+        width: 218px;
+        height: 51px;
+        border-bottom: 1px solid #ddd;
+        font-size: 16px;
+        color: #333;
+        padding-left: 19px;
+        box-sizing: border-box;
+        line-height: 51px;
+    }
+    .ass_ull_2 {
+        color: #0E59BA;
+        font-weight: bold;
+        padding-left: 35px;
+        background: url(../images/arrow.png)no-repeat 19px center;
+        background-color: #f5f5f5;
+    }
+}
+
+.expert_qb {
+    width: 850px;
+    .fr();
+    padding-top: 13px;
+    border-top: 3px solid #eeeeee;
+}
+
+.ass_ulr1 {
+    width: 850px;
+    .fr();
+    padding-top: 13px;
+    border-top: 3px solid #eeeeee;
+    display: none;
+}
+
+.pageBox {
+    width: 850px;
+    font-size: 14px;
+    .clearfix();
+    display: none;
+}
+
+.pageDiv {
+    width: 100%;
+    background: #fff;
+    ul {
+        width: 100%;
+        .clearfix();
+    }
+    li {
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        border-bottom: 1px dashed #ddd;
+        padding-left: 14px;
+        background: url(../images/arrow_hei.png)no-repeat left center;
+        box-sizing: border-box;
+        span {
+            font-size: 16px;
+            color: #333;
+            .d-ib();
+            a {
+                color: #333;
+                &:hover {
+                    text-decoration: underline;
+                    color: #ec6941;
+                }
+            }
+        }
+        span:nth-of-type(1) {
+            .fl();
+            width: 670px;
+            .ellipsis-basic();
+        }
+        span:nth-of-type(2) {
+            .fr();
+            color: #999999;
+        }
+    }
+}
+
+.hide {
+    display: none;
+}
+
+.notContent {
+    padding: 15px 0;
+    text-align: center;
+}
+
+.page {
+    text-align: center;
+    width: 100%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.pageMenu {
+    display: inline-block;
+    width: 90%;
+}
+
+.pageMenu li {
+    border: solid thin #ddd;
+    margin: 3px;
+    float: left;
+    padding: 5px 10px;
+    cursor: pointer;
+    background: #fff;
+}
+
+.pageMenu li.firstPage {}
+
+.pageMenu li.prevPage {}
+
+.pageMenu li.pageNum {}
+
+.pageMenu li.nextPage {}
+
+.pageMenu li.lastPage {}
+
+.pageMenu li.disabled {
+    background-color: #DDDDDD;
+    cursor: not-allowed;
+}
+
+.pageMenu li.active {
+    border: solid thin #0e57b5;
+    background-color: #0e57b5;
+    color: white;
+    .border-radius(2px);
+}
+
+.pageMenu li.last {
+    background: transparent;
+    border: 0;
+    position: relative;
+    top: -4px;
+}
+
+.page .keuInput {
+    padding: 0 5px;
+    width: 30px;
+    border: solid thin #ddd;
+    height: 29px;
+    outline: none;
+    text-align: center;
+    font-size: 16px;
+}
+
+.page .btnSure {
+    padding: 4px 8px;
+    border: solid thin #ddd;
+    outline: none;
+    text-align: center;
+    font-size: 16px;
+    background: #fff;
+    position: relative;
+    top: 2px;
+}
+
+.page .btnSure:hover {
+    cursor: pointer;
+}

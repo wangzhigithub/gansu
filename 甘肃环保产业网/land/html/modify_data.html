@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="pragma" content="no-cache">
+		<title>资料修改</title>
+		<link rel="stylesheet" type="text/css" href="../css/modify_data.css" />
+		<script type="text/javascript" src="../../common/js/jquery-1.8.3.min.js"></script>
+		<script src="../../common/js/sanjishuju.js"></script>
+		<script type="text/javascript" src="../js/modify_data.js"></script>
+	</head>
+
+	<body ng-app="app">
+		<!--头部-->
+		<div id="header"></div>
+		<!--横线-->
+		<div class="heng"></div>
+
+		<!--小介绍-->
+
+		<div class="nav_xiao">
+			您的位置：
+			<a href="../../pages/html/index.html">首页</a>
+			-
+			<a class="xiehui1">个人中心</a>
+
+		</div>
+
+		<!--主体-->
+		<div class="personal">
+			<div class="personal_l">
+				<div class="personal_l_ul">
+					<span>账号管理</span>
+					<ul>
+						<li >
+							<a href="per_information.html">基本信息</a>
+						</li>
+						<li class="juxing">
+							<a >资料修改</a>
+						</li>
+						<li >
+							<a href="modify_password.html">密码修改</a>
+						</li>
+						<li > 
+							<a href="bind_mobile.html">绑定手机</a>
+						</li>
+					</ul>
+				</div>
+				<div class="personal_l_ul">
+					<span>信息管理</span>
+					<ul>
+						<li>
+							<a href="my_news.html">我的消息</a>
+						</li>
+						<li >
+							<a href="my_collection.html">我的收藏</a>
+						</li>
+						<li>
+							<a href="my_download.html">我的下载</a>
+						</li>
+					</ul>
+				</div>
+				<div class="personal_l_ul">
+					<span>协会会员</span>
+					<ul>
+						<li>
+							<a href="membership.html">入会申请</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="personal_r personal_r1" >
+	
+				<div class="personal_r_x">
+					<div class="personal_rbox personal_user_name">
+						<div class="td1">用户名</div>
+						<div class="td2">
+							<input id="user_name" type="text" disabled="disabled">
+						</div>
+					</div>
+					<div class="personal_rbox personal_real_name">
+						<div class="td1">真实姓名</div>
+						<div class="td2">
+							<input id="real_name" type="text">
+						</div>
+					</div>
+					<!--性别-->
+					<div class="personal_rbox personal_gender">
+						<div class="td1">性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别</div>
+						<form action="" method="get" class="gender"> 
+							<label><input name="Fruit" type="radio" value="" class="gender1" /><span>先生</span> </label> 
+						    <label><input name="Fruit" type="radio" value="" class="gender2"/><span>女士</span> </label>
+						</form> 
+					</div>
+					<!--所在地区-->
+					<div class="personal_rbox personal_gender">
+						<div class="td1">所在地区</div>
+						 <div class="info">
+				            <select name="province" id="province">
+				                <option value="">省份</option>
+				            </select>
+				            <select name="city" id="city">
+				                <option value="">地级市</option>
+				            </select>
+				            <select name="districtAndCounty" id="districtAndCounty">
+				                <option value="">市、县级市</option>
+				            </select>
+				        </div>
+					</div>
+					<!--联系地址-->
+					<div class="personal_rbox personal_user_address">
+						<div class="td1">联系地址</div>
+						<div class="td2">
+							<input id="address" type="text">
+						</div>
+					</div>
+					<!--手机-->
+					<div class="personal_rbox personal_phone">
+						<div class="td1">手 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;机</div>
+						<div class="td2">
+							<input id="phone" type="text" disabled="disabled">
+						</div>
+						
+						<a href="bind_mobile.html" class="aa">更换手机</a>
+					</div>
+					<!--邮箱-->
+					<div class="personal_rbox personal_phone">
+						<div class="td1">邮 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱</div>
+						<div class="td2">
+							<input id="email" type="text" disabled="">
+						</div>
+						
+						<a href="bind_mailbox.html" class="aa">绑定邮箱</a>
+					</div>
+					<!--QQ-->
+					<div class="personal_rbox personal_phone">
+						<div class="td1">Q &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Q</div>
+						<div class="td2">
+							<input id="qq" type="text" >
+						</div>
+					</div>
+					
+					<div class="personal_rbox personal_rbox _tupin">
+						<div class="td1"></div>
+						
+                        <input type="button" id="fasong" value="保存" /> 
+					</div>
+				</div>
+			     
+			   
+			</div>
+		      
+		      
+		   
+		</div>
+<div class="kongdiv"></div>
+		<!--底部-->
+		<div id="footer"></div>
+		<script>
+			$("#footer").load("../../common/html/footer1.html")
+		</script>
+	</body>
+
+</html>

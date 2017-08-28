@@ -1,0 +1,248 @@
+@charset "utf-8";
+//引用头部
+@import "../../common/css/header";
+//引用底部
+@import "../../common/css/footer";
+.heng {
+    width: 100%;
+    height: 3px;
+    background: #0E59BA;
+}
+
+body {
+    background: #f5f5f5;
+}
+
+#header {
+    background: #fff;
+}
+
+//小介绍
+.nav_xiao {
+    width: 1100px;
+    margin: 0 auto;
+    line-height: 52px;
+    font-size: 12px;
+    a {
+        color: #333;
+    }
+}
+
+//主体
+.personal {
+    width: 1100px;
+    margin: 0 auto;
+    .clearfix();
+}
+
+.personal_l {
+    width: 200px;
+    height: 700px;
+    background: #fff;
+    .fl();
+}
+
+.personal_l_ul {
+    span {
+        .d-ib();
+        width: 100%;
+        height: 50px;
+        margin-top: 17px;
+        font-weight: bold;
+        font-size: 20px;
+        padding-left: 40px;
+        box-sizing: border-box;
+    }
+    ul {
+        .clearfix();
+    }
+    li {
+        width: 100%;
+        font-size: 16px;
+        line-height: 50px;
+        padding-left: 40px;
+        box-sizing: border-box;
+        cursor: pointer;
+        a {
+            .d-ib();
+            width: 100%;
+            height: 100%;
+            color: #333;
+        }
+    }
+    .juxing {
+        background: url(../images/juxing.png)no-repeat left top #f5f5f5;
+        a {
+            color: #0e59ba;
+            font-weight: bold;
+        }
+    }
+}
+
+.personal_r {
+    width: 880px;
+    background: #fff;
+    .fr();
+    padding: 20px;
+    box-sizing: border-box;
+}
+#myform{
+    width: 620px;
+    p{
+        margin-top: 30px;
+        .clearfix(); 
+    }
+    label{
+        width: 117px;
+        height: 40px;
+        text-align: right;
+        padding-right: 23px;
+        box-sizing: border-box;
+        font-size: 16px;
+        line-height: 40px; 
+        .fl();
+    }
+    .text{
+        width: 380px;
+        height: 40px;
+        border: 1px solid #eeeeee;
+        padding: 10px;
+        box-sizing: border-box;
+        font-size: 16px;.fl();
+    }
+    .mem_seclect{
+        width: 120px;
+        height: 40px;
+         border: 1px solid #eeeeee;
+          box-sizing: border-box;
+          margin-right: 10px;
+          .fl();
+          padding-left: 10px;
+          option{
+              width: 100%;
+          }
+    }
+    .text1{
+        width: 120px;
+        height: 40px;
+         border: 1px solid #eeeeee;
+          box-sizing: border-box;
+          margin-right: 10px;
+           font-size: 16px;.fl();
+    }
+    span{
+        .fl();
+        line-height: 40px;
+        color: #999999;
+    }
+    textarea{
+        outline: none;
+    }
+    .text2{
+        width: 540px;
+        height:210px;
+         border: 1px solid #eeeeee;
+          box-sizing: border-box;
+           font-size: 16px;.fl();
+           padding: 4px 20px;
+           line-height: 32px;
+    }
+    
+    #zong_btn{
+        width: 200px;
+        height: 50px;
+        background: #0E59BA;
+        color:#fff;
+        text-align: center;
+      .border-radius(@radius: 3px);
+      cursor: pointer;
+      font-size: 16px;
+      margin-bottom: 40px;
+    }
+    
+    .upload{
+        width: 650px;
+        span{
+            .d-ib();
+            margin-left: 11px;
+            color: #0e59ba;
+        }
+    }
+    
+}
+
+.file {
+      cursor: pointer;
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+    color: #1E88C7;
+    text-decoration: none;
+    text-indent: 0;
+    line-height: 20px;
+}
+.file input {
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+}
+.yulan{
+    cursor: pointer;
+}
+.close{
+     cursor: pointer;
+}
+
+
+
+.kongdiv{
+    width: 100%;
+    height: 40px;
+}
+
+//图片预览的地方
+
+.Dmid{
+   display: none;
+}
+.dd{
+            z-index: 1000;
+     display: none;
+    width: 230px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -115px;
+    margin-top: -100px;
+    background: #fff;
+    line-height: 20px;
+    text-align: center;
+    .dd_h{
+
+        width: 230px;
+        height: 30px;
+        background: #0E59BA;
+
+        .dd_close{
+                    .fr();
+        cursor: pointer;
+            width: 30px;height: 30px;
+            background: url(../images/close.gif)no-repeat center center;
+        }
+    }
+    #dd_img{
+        width: 230px;height: 170px;
+        padding: 10px;
+        box-sizing: border-box;
+        .pos(r);
+        img{
+            width: 210px;
+            .pos(a);
+            top: 10px;
+            left: 10px;
+        }
+    }
+    
+}

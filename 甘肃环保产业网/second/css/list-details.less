@@ -1,0 +1,258 @@
+@charset "utf-8";
+//引用头部
+@import "../../common/css/header";
+//引用底部
+@import "../../common/css/footer";
+//小介绍
+.nav_xiao {
+    width: 1100px;
+    margin: 0 auto;
+    line-height: 52px;
+    font-size: 12px;
+    a {
+        color: #333;
+    }
+}
+
+//列表
+.list_box {
+    width: 1100px;
+    margin: 0 auto;
+    min-height: 830px;
+}
+
+.list_boxl {
+    width: 802px;
+    .fl();
+    box-sizing: border-box;
+}
+
+.biaoti {
+    width: 100%;
+    height: 130px;
+    border-top: 3px solid #dddddd;
+    box-sizing: border-box;
+    .biaoti_s {
+        line-height: 95px;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .biaoti_x {
+        line-height: 32px;
+        p {
+            .fl();
+            .d-i();
+            color: #999999;
+        }
+        p:nth-of-type(2) {
+            margin-left: 20px;
+        }
+        p:nth-of-type(3) {
+            .fr();
+            margin-left: 14px;
+            .bdsharebuttonbox {
+                .fr();
+                margin-top: 3px;
+            }
+        }
+        p:nth-of-type(4) {
+            .fr();
+            width: 49px;
+            height: 29px;
+            cursor: pointer;
+            img {
+                .fl();
+                margin-top: 7px;
+            }
+        }
+    }
+}
+
+.pageBox {
+    width: 802px;
+    font-size: 14px;
+    .clearfix();
+    padding: 23px 0 26px 0;
+    border-top: 1px dashed #dddddd;
+    border-bottom: 1px dashed #dddddd;
+}
+
+.pageDiv {
+    width: 100%;
+    background: #fff;
+    p {
+        padding: 10px 0;
+        line-height: 28px;
+        text-indent: 32px;
+        box-sizing: border-box;
+        img {
+            width: 500px;
+            margin-left: 141px;
+        }
+    }
+}
+
+.hide {
+    display: none;
+}
+
+.notContent {
+    padding: 15px 0;
+    text-align: center;
+}
+
+.page {
+    text-align: center;
+    width: 100%;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.pageMenu {
+    display: inline-block;
+    width: 90%;
+}
+
+.pageMenu li {
+    border: solid thin #ddd;
+    margin: 3px;
+    float: left;
+    padding: 5px 10px;
+    cursor: pointer;
+    background: #fff;
+}
+
+.pageMenu li.firstPage {}
+
+.pageMenu li.prevPage {}
+
+.pageMenu li.pageNum {}
+
+.pageMenu li.nextPage {}
+
+.pageMenu li.lastPage {}
+
+.pageMenu li.disabled {
+    background-color: #DDDDDD;
+    cursor: not-allowed;
+}
+
+.pageMenu li.active {
+    border: solid thin #0e57b5;
+    background-color: #0e57b5;
+    color: white;
+    .border-radius(2px);
+}
+
+.pageMenu li.last {
+    background: transparent;
+    border: 0;
+    position: relative;
+    top: -4px;
+}
+
+.page .keuInput {
+    padding: 0 5px;
+    width: 30px;
+    border: solid thin #ddd;
+    height: 29px;
+    outline: none;
+    text-align: center;
+    font-size: 16px;
+}
+
+.page .btnSure {
+    padding: 4px 8px;
+    border: solid thin #ddd;
+    outline: none;
+    text-align: center;
+    font-size: 16px;
+    background: #fff;
+    position: relative;
+    top: 2px;
+}
+
+.page .btnSure:hover {
+    cursor: pointer;
+}
+
+.article {
+    width: 100%;
+    height: 97px;
+    padding: 13px 0 34px 0;
+    box-sizing: border-box;
+    p {
+        line-height: 25px;
+        font-size: 14px;
+        a {
+            color: #333;
+            &:hover {
+                text-decoration: underline;
+                //               color: #ec6941;    
+            }
+        }
+    }
+}
+
+.list_boxr {
+    width: 260px;
+    .fr();
+}
+
+.list_boxr_wen {
+    width: 260px;
+    border: 1px solid #eee;
+    box-sizing: border-box;
+}
+
+.list_boxr_wen1 {
+    width: 258px;
+    height: 39px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #eee;
+    background: #f6f7f7;
+    .pos(r);
+    &text {
+        .fl();
+        line-height: 39px;
+        color: #0e59ba;
+        .font-s16();
+        font-weight: bold;
+        padding-left: 20px;
+    }
+}
+
+.list_boxr_wen2 {
+    width: 220px;
+    margin: 0 20px;
+    padding: 6px 0px 11px 0px;
+    box-sizing: border-box;
+    ul {
+        .clearfix();
+    }
+    li {
+        padding-left: 10px;
+        height: 28px;
+        background: url(../images/sanjiao.png) left center no-repeat;
+        line-height: 28px;
+        width: 220px;
+        a {
+            color: #333;
+            .d-ib();
+            width: 220px;
+            .ellipsis-basic();
+            &:hover {
+                text-decoration: underline;
+                color: #ec6941;
+            }
+        }
+    }
+}
+
+//中
+.list_boxr_z {
+    width: 260px;
+    height: 190px;
+    margin: 20px 0;
+}

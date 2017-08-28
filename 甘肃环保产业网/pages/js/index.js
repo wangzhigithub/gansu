@@ -52,7 +52,7 @@ $(function() {
 
 			$http({
 				url: "../listData.json",
-				mettod: 'get'
+				 method: 'get'
 			}).then(function(data) {
 				$scope.txt = data.data;
 				$scope.txt1 = data.data[0].data.list;
@@ -66,9 +66,13 @@ $(function() {
 
 		var cer1 = $('.section2_right_x1').find('option:selected').html();
 		var cer2 = $('.section2_right_x2').find('option:selected').html();
-		var cer3 = $("input[class='section2_right_x3']").attr("value")
+		var cer3 = $("input[class='section2_right_x3']").attr("value");
+        
+       window.open(encodeURI("../../second/html/certificate.html?name="+cer1+"&nub="+cer2+"&text="+cer3));
+//      window.open("../../second/html/certificate.html?name="+cer1+"&nub="+cer2+"&text="+cer3)  
+       
 
-	})
+	});
 
 	//	百叶窗轮播插件的使用
 	jQuery(function($) {

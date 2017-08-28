@@ -1,0 +1,286 @@
+@charset "utf-8";
+//引用头部
+@import "../../common/css/header";
+//引用底部
+@import "../../common/css/footer";
+.heng {
+    width: 100%;
+    height: 3px;
+    background: #0E59BA;
+}
+
+body {
+    background: #f5f5f5;
+}
+
+#header {
+    background: #fff;
+}
+
+//小介绍
+.nav_xiao {
+    width: 1100px;
+    margin: 0 auto;
+    line-height: 52px;
+    font-size: 12px;
+    a {
+        color: #333;
+    }
+}
+
+//主体
+.personal {
+    width: 1100px;
+    margin: 0 auto;
+    .clearfix();
+}
+
+.personal_l {
+    width: 200px;
+    height: 830px;
+    background: #fff;
+    .fl();
+}
+
+.personal_l_ul {
+    span {
+        .d-ib();
+        width: 100%;
+        height: 50px;
+        margin-top: 17px;
+        font-weight: bold;
+        font-size: 20px;
+        padding-left: 40px;
+        box-sizing: border-box;
+    }
+    ul {
+        .clearfix();
+    }
+    li {
+        width: 100%;
+        font-size: 16px;
+        line-height: 50px;
+        padding-left: 40px;
+        box-sizing: border-box;
+        cursor: pointer;
+        a {
+            .d-ib();
+            width: 100%;
+            height: 100%;
+            color: #333;
+        }
+    }
+    .juxing {
+        background: url(../images/juxing.png)no-repeat left top #f5f5f5;
+        a {
+            color: #0e59ba;
+            font-weight: bold;
+        }
+    }
+}
+
+.personal_r {
+    width: 880px;
+    background: #fff;
+    .fr();
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.personal_r_x{
+    width: 840px;
+    padding-top: 15px;
+    border-top:3px solid #eeeeee ;
+}
+
+
+.kongdiv {
+    width: 100%;
+    height: 40px;
+}
+.personal_r_h{
+    line-height: 58px;
+    padding-top: 8px;
+    height: 58px;
+    p{
+        .fl();
+    }
+    p:nth-of-type(1){
+        font-size: 18px;
+        font-weight: bold;
+        color: #0E59BA;
+    }
+    .zong{
+        .fr();
+        font-size: 14px;
+        span{
+            color: #0E59BA;
+        }
+    }
+}
+.news_r_x1{
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    font-size: 16px;
+    .news_select{
+        .fl();
+        input{
+            width: 14px;
+            height: 14px;
+            margin-left: 20px;
+            margin-top: 15.5px;
+            .fl();
+        }
+        span{
+            .fl();
+            margin-left: 7px;
+        }
+    }
+    .news_delete{
+        width: 53px;
+        height: 45px;
+        .fr();
+        cursor: pointer;
+        img{
+            .fl();
+            margin:11px 0px 0 20px ;
+        }
+    }
+}
+
+.pageDiv{
+    .clearfix();
+    li{
+         .clearfix();
+        line-height: 32px;
+        padding: 31px 20px;
+        border-top:1px dashed #dddddd ;
+        font-size: 16px;
+       .select{
+             .fl();
+            
+             width: 800px;
+             .pos(r);
+            input{
+                .pos(a);
+                width: 14px;
+                height: 14px;
+                top: 50%;
+                margin-top: -7px;
+            }
+            a{
+                .fl();
+                 padding: 0 180px 0 20px;
+            }
+            .time{
+                width: 150px;
+                text-align: right;
+                .pos(a);
+                top: 50%;
+                right: 0;
+                margin-top: -16px;
+                cursor: pointer;
+                span{
+                 
+                }
+                img{
+                    display: none;
+                    cursor: pointer;
+                }
+            }
+
+            
+       }
+
+
+       
+    }
+}
+
+
+
+.hide {
+    display: none;
+}
+
+.notContent {
+    padding: 15px 0;
+    text-align: center;
+}
+
+.page {
+    text-align: center;
+    width: 100%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.pageMenu {
+    display: inline-block;
+    width: 85%;
+    height: 40px;
+}
+
+.pageMenu li {
+    border: solid thin #ddd;
+    margin: 3px;
+    float: left;
+    padding: 5px 10px;
+    cursor: pointer;
+    background: #fff;
+}
+
+.pageMenu li.firstPage {}
+
+.pageMenu li.prevPage {}
+
+.pageMenu li.pageNum {}
+
+.pageMenu li.nextPage {}
+
+.pageMenu li.lastPage {}
+
+.pageMenu li.disabled {
+    background-color: #DDDDDD;
+    cursor: not-allowed;
+}
+
+.pageMenu li.active {
+    border: solid thin #0e57b5;
+    background-color: #0e57b5;
+    color: white;
+    .border-radius(2px);
+}
+
+.pageMenu li.last {
+    background: transparent;
+    border: 0;
+    position: relative;
+    top: -4px;
+}
+
+.page .keuInput {
+    padding: 0 5px;
+    width: 30px;
+    border: solid thin #ddd;
+    height: 29px;
+    outline: none;
+    text-align: center;
+    font-size: 16px;
+}
+
+.page .btnSure {
+    padding: 4px 8px;
+    border: solid thin #ddd;
+    outline: none;
+    text-align: center;
+    font-size: 16px;
+    background: #fff;
+    position: relative;
+    top: 2px;
+}
+
+.page .btnSure:hover {
+    cursor: pointer;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>证书查询</title>
+		<link rel="stylesheet" type="text/css" href="../css/certificate.css" />
+		<script type="text/javascript" src="../../common/js/jquery-1.8.3.min.js"></script>
+		<!--<script src="../../common/js/page.js"></script>-->
+		<script type="text/javascript" src="../js/certificate.js"></script>
+		<script src="https://cdn.bootcss.com/angular.js/1.4.6/angular.min.js"></script>
+
+	</head>
+
+	<body>
+		<!--头部-->
+		<div id="header"></div>
+		<!--横线-->
+	     <div class="heng"></div>
+		
+
+		<!--小介绍-->
+
+		<div class="nav_xiao">
+			您的位置：
+			<a href="../../pages/html/index.html">首页</a>
+			-
+			<a class="xiehui1" >证书查询</a>
+			
+		</div>
+
+		<!--主体-->
+		<div class="dow_box">
+			<div class="dow_boxs">
+				 <select name="" class="dow_boxs1">
+				 		<option value="0">公司名称</option>
+						<option value="1">证书内容</option>
+						<option value="2">证书ID</option>
+				 </select>
+				 <select name="" class="dow_boxs2">
+				 		<option value="0">会员证</option>
+						<option value="1">资质证</option>
+						<option value="2">设计证</option>
+						<option value="3">推荐证</option>
+				 </select>
+				<input type="text" class="dow_boxs3" placeholder="请输入关键字" autocomplete="off" />
+					<div class="dow_boxs4">
+						查询
+					</div>
+				
+			</div>
+
+			<div class="dow_boxx">
+				<div class="dow_box_x1">
+					<ul>
+						<li>证书ID</li>
+						<li>公司名称</li>
+						<li>证书类型</li>
+						<li>证书内容</li>
+						<li>更新时间</li>
+					</ul>
+				</div>
+				<div class="dow_box_x2">
+					<div class="pageBox">
+						<div class="pageDiv ">
+							<!--<ul>
+								<li>
+									2017-003
+								</li>
+								<li>
+									<a href="#">资料名称</a>
+								</li>
+								<li>资料类型</li>
+								<li>大小</li>
+								<li>更新时间</li>
+								
+							</ul>-->
+						</div>
+						<div class="notContent ">
+							无数据
+						</div>
+						<div class="page">
+							<ul class="pageMenu clearfix">
+								<li class="firstPage">首页</li>
+								<li class="prevPage">
+									< 上一页 </li>
+										<div class="pageObj "></div>
+										<li class="nextPage"> 下一页 > </li>
+										<li class="lastPage">尾页</li>
+										<li class="last" style="font-size: 14px;">
+											共<span class="totalPage"></span>页，跳转至 <input type="number" class="keuInput" value="1">
+											<button type="button" class="btnSure">确定</button>
+										</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+         <!--底部-->
+		<div id="footer"></div>
+		<script>
+			$("#footer").load("../../common/html/footer1.html")
+		</script>
+	</body>
+
+</html>

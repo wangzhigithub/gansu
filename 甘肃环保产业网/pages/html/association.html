@@ -17,46 +17,11 @@
 
 	<body ng-app="app">
 		<!--头部-->
-		<header>
-			<div class="header">
-				<div class="header_left">
-					<span>
-						欢迎光临甘肃环保产业网！&nbsp; &nbsp;客服热线：0931-8682726
-					</span>
-				</div>
-				<div class="header_right">
-					<ul>
-						<li>
-							<a href="javascript:void(0);" id="setHomePage" onclick="SetHome(this)" style="behavior:url(#default#homepage);">设为首页</a><span>|</span></li>
-						<li>
-							<a href="javascript:AddFavorite(document.location.href,document.title);">加入收藏</a><span>|</span></li>
-						<li>
-							<a href="">联系我们</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</header>
-		<!--头部-副-->
-		<div class="f-header">
-			<div class="logo">
-				<a href="index.html"><img src="../images/logo.png" /></a>
-			</div>
-			<div class="search">
-				<div class="search_box">
-					<input type="text" class="search_input" placeholder="2017世界地球日">
-					<input type="button" class="search_btn">
-				</div>
-			</div>
-			<div class="landRegister">
-				<div class="land">
-					登陆
-				</div>
-				<div class="register">
-					注册
-				</div>
-			</div>
-		</div>
+		<div id="header"></div>
+		<script>
+			$("#header").load("../../common/html/header1.html");
+		</script>
+		<!--导航-->
 		<div class="nav">
 			<div class="nav_box">
 				<div class="nav_box_1 ">
@@ -76,7 +41,7 @@
 								<a href="../../second/html/ass-work.html">协会工作</a>
 							</li>
 							<li>
-								<a href="#">协会动态</a>
+								<a href="../../second/html/list.html">协会动态</a>
 							</li>
 							<li>
 								<a href="#">协会章程</a>
@@ -132,7 +97,7 @@
 								<a href="#">环保贴士</a>
 							</li>
 							<li>
-								<a href="#">专家库</a>
+								<a href="../../second/html/expert.html">专家库</a>
 							</li>
 						</ul>
 					</div>
@@ -281,7 +246,7 @@
 					<div class="ass3_left_stext">
 						协会动态
 					</div>
-					<a href="#" class="ass3_left_sa" target="_blank"></a>
+					<a href="../../second/html/list.html" class="ass3_left_sa" target="_blank"></a>
 
 				</div>
 				<div class="ass3_left_x ">

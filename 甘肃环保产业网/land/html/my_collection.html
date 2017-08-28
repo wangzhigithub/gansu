@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="pragma" content="no-cache">
+		<title>我的收藏</title>
+		<link rel="stylesheet" type="text/css" href="../css/my_collection.css" />
+		<script type="text/javascript" src="../../common/js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="../js/my_collection.js"></script>
+	</head>
+
+	<body ng-app="app">
+		<!--头部-->
+		<div id="header"></div>
+		<!--横线-->
+		<div class="heng"></div>
+
+		<!--小介绍-->
+
+		<div class="nav_xiao">
+			您的位置：
+			<a href="../../pages/html/index.html">首页</a>
+			-
+			<a class="xiehui1">个人中心</a>
+
+		</div>
+
+		<!--主体-->
+		<div class="personal">
+			<div class="personal_l">
+				<div class="personal_l_ul">
+					<span>账号管理</span>
+					<ul>
+						<li>
+							<a href="per_information.html">基本信息</a>
+						</li>
+						<li>
+							<a href="modify_data.html">资料修改</a>
+						</li>
+						<li>
+							<a href="modify_password.html">密码修改</a>
+						</li>
+						<li>
+							<a href="bind_mobile.html">绑定手机</a>
+						</li>
+					</ul>
+				</div>
+				<div class="personal_l_ul">
+					<span>信息管理</span>
+					<ul>
+						<li>
+							<a href="my_news.html">我的消息</a>
+						</li>
+						<li class="juxing">
+							<a>我的收藏</a>
+						</li>
+						<li>
+							<a href="my_download.html">我的下载</a>
+						</li>
+					</ul>
+				</div>
+				<div class="personal_l_ul">
+					<span>协会会员</span>
+					<ul>
+						<li>
+							<a href="membership.html">入会申请</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="personal_r">
+				<div class="personal_r_h">
+					<p>
+						我的收藏
+					</p>
+					<p class="zong">
+						共&nbsp;<span></span>&nbsp;条
+					</p>
+				</div>
+				<div class="personal_r_x">
+				
+					
+					
+					<div class="pageBox">
+						<ul class="pageDiv ">
+							<!--<li>
+								<p>
+									<a href="">打击进口废物环境违法专项行动：被查企业已达502家，超七成涉嫌违法</a>
+								</p>
+								<p class="pageDiv_r">
+									<span class='time'>
+							     	 	2017-07-08
+							     	</span>
+									<span class="tupian">
+							     	 	<img src="../images/quxiao.png"/>
+							     	 </span>
+								</p>
+
+							</li>-->
+						</ul>
+						<div class="notContent ">
+							无数据
+						</div>
+						<div class="page">
+							<ul class="pageMenu clearfix">
+								<li class="firstPage">首页</li>
+								<li class="prevPage">
+									< 上一页 </li>
+										<div class="pageObj "></div>
+										<li class="nextPage"> 下一页 > </li>
+										<li class="lastPage">尾页</li>
+										<li class="last" style="font-size: 14px;">
+											共<span class="totalPage"></span>页，跳转至 <input type="number" class="keuInput" value="1">
+											<button type="button" class="btnSure">确定</button>
+										</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="kongdiv"></div>
+		<!--底部-->
+		<div id="footer"></div>
+		<script>
+			$("#footer").load("../../common/html/footer1.html")
+		</script>
+	</body>
+
+</html>

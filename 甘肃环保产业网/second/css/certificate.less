@@ -1,0 +1,245 @@
+@charset "utf-8";
+//引用头部
+@import "../../common/css/header";
+//引用底部
+@import "../../common/css/footer";
+.heng {
+    width: 100%;
+    height: 3px;
+    background: #0E59BA;
+}
+
+//小介绍
+.nav_xiao {
+    width: 1100px;
+    margin: 0 auto;
+    line-height: 52px;
+    font-size: 12px;
+    a {
+        color: #333;
+    }
+}
+
+.dow_box {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.dow_boxs {
+    width: 100%;
+    height: 32px;
+    padding: 0px 0 20px 0px;
+    .dow_boxs1 {
+        width: 130px;
+        height: 32px;
+        .border-radius(2px);
+        border: 1px solid #eeeeee;
+        padding: 0 3px;
+        box-sizing: border-box;
+        .fl();
+    }
+    .dow_boxs2 {
+        width: 130px;
+        height: 32px;
+        .border-radius(2px);
+        border: 1px solid #eeeeee;
+        padding: 0 3px;
+        box-sizing: border-box;
+        margin-left: 10px;
+        .fl();
+    }
+    .dow_boxs3 {
+        height: 32px;
+        width: 250px;
+        .border-radius(2px);
+        border: 1px solid #eeeeee;
+        margin-left: 10px;
+        padding: 0 5px;
+        box-sizing: border-box;
+         .fl();
+    }
+    .dow_boxs4 {
+        width: 120px;
+        height: 32px;
+        .border-radius(2px);
+        text-align: center;
+        line-height: 32px;
+        margin-left: 10px;
+        background: #ddd;
+        .font-s16();
+        cursor: pointer;
+         .fl();
+    }
+}
+
+.dow_boxx {
+    width: 1099px;
+    border-top: 1px solid #c5daf4;
+    .dow_box_x1 {
+        width: 100%;
+        height: 42px;
+        font-weight: bold;
+        ul {
+            .clearfix();
+            background: #e8f2ff;
+        }
+        li {
+            height: 42px;
+            line-height: 42px;
+            .fl();
+            border-bottom: 1px solid #c5daf4;
+            border-right: 1px solid #c5daf4;
+        }
+        li:nth-of-type(1) {
+             width: 129px;
+               padding-left: 10px;
+            border-left: 1px solid #c5daf4;
+        }
+        li:nth-of-type(2) {
+            width: 338px;
+            padding-left: 10px;
+        }
+        li:nth-of-type(3) {
+            width: 70px;
+            padding-left: 10px;
+        }
+        li:nth-of-type(4) {
+            width: 417px;
+            padding-left: 10px;
+        }
+        li:nth-of-type(5) {
+            width: 89px;
+            padding-left: 10px;
+        }
+
+    }
+    .pageDiv {
+        width: 100%;
+        height: 42px;
+        ul {
+            .clearfix();
+        }
+        li {
+            height: 42px;
+            line-height: 42px;
+            .fl();
+            border-bottom: 1px solid #c5daf4;
+            border-right: 1px solid #c5daf4;
+        }
+        li:nth-of-type(1) {
+            width: 129px;
+               padding-left: 10px;
+            border-left: 1px solid #c5daf4;
+
+        }
+        li:nth-of-type(2) {
+            width: 338px;
+            padding-left: 10px;
+            a {
+                color: #333;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+        li:nth-of-type(3) {
+            width: 70px;
+            padding-left: 10px;
+        }
+        li:nth-of-type(4) {
+            width: 417px;
+            padding-left: 10px;
+        }
+        li:nth-of-type(5) {
+            width: 89px;
+            padding-left: 10px;
+        }
+
+    }
+}
+
+//分页css
+.hide {
+    display: none;
+}
+
+.notContent {
+    padding: 15px 0;
+    text-align: center;
+}
+
+.page {
+    text-align: center;
+    width: 100%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.pageMenu {
+    display: inline-block;
+    width: 62%;
+    margin: 20px auto;
+}
+
+.pageMenu li {
+    border: solid thin #ddd;
+    margin: 3px;
+    float: left;
+    padding: 5px 10px;
+    cursor: pointer;
+    background: #fff;
+}
+
+.pageMenu li.firstPage {}
+
+.pageMenu li.prevPage {}
+
+.pageMenu li.pageNum {}
+
+.pageMenu li.nextPage {}
+
+.pageMenu li.lastPage {}
+
+.pageMenu li.disabled {
+    background-color: #DDDDDD;
+    cursor: not-allowed;
+}
+
+.pageMenu li.active {
+    border: solid thin #0e57b5;
+    background-color: #0e57b5;
+    color: white;
+    .border-radius(2px);
+}
+
+.pageMenu li.last {
+    background: transparent;
+    border: 0;
+    position: relative;
+    top: -4px;
+}
+
+.page .keuInput {
+    padding: 0 5px;
+    width: 30px;
+    border: solid thin #ddd;
+    height: 29px;
+    outline: none;
+    text-align: center;
+    font-size: 16px;
+}
+
+.page .btnSure {
+    padding: 4px 8px;
+    border: solid thin #ddd;
+    outline: none;
+    text-align: center;
+    font-size: 16px;
+    background: #fff;
+    position: relative;
+    top: 2px;
+}
+
+.page .btnSure:hover {
+    cursor: pointer;
+}

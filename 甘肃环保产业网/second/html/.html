@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			
+		var oJson = 
+		[{
+		    "province": "广东",
+		    "item": [{
+		        "ID": "1",
+		        "province_id": "7",
+		        "title": "广东小吃 好吃真好吃",
+		        "imgUrl": "http://xxxx/images/item/7_001.jpg",
+		        "link": "https://xxxxxxxxx"
+		    }, {
+		        "ID": "2",
+		        "province_id": "7",
+		        "title": "广东炒饭 香喷喷爱上",
+		        "imgUrl": "http://xxxx/images/item/7_001.jpg",
+		        "link": "https://xxxxxxxxx"
+		    }]
+		}, {
+		    "province": "江西",
+		    "item": [{
+		        "ID": "1",
+		        "province_id": "8",
+		        "title": "江西小吃 好吃不上火",
+		        "imgUrl": "http://xxxx/images/item/7_001.jpg",
+		        "link": "https://xxxxxxxxx"
+		    }, {
+		        "ID": "2",
+		        "province_id": "8",
+		        "title": "江西炒饭 香喷喷",
+		        "imgUrl": "http://xxxx/images/item/7_001.jpg",
+		        "link": "https://xxxxxxxxx"
+		    }]
+		}, {
+		    "province": "广西",
+		    "item": [{
+		        "ID": "1",
+		        "province_id": "9",
+		        "title": "优质酱卤牛肉",
+		        "imgUrl": "http://xxxx/images/item/7_001.jpg",
+		        "link": "https://xxxxxxxxx"
+		    }, {
+		        "ID": "2",
+		        "province_id": "9",
+		        "title": "农家自制豆制品豆干豆腐",
+		        "imgUrl": "http://xxxx/images/item/7_001.jpg",
+		        "link": "https://xxxxxxxxx"
+		    }]
+		}];
+		
+		
+		var aSearch = [];
+		oJson.forEach(function(ele){//循环外层数组
+		    var aTemp = ele.item.filter(function(i){ 
+		        return /炒饭/.test(i.title); // 过滤符合要求的item数组
+		    });
+		    aSearch = aSearch.concat(aTemp); // 将符合要求的数组合并到aSearch;
+		});
+		console.log(aSearch);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

@@ -1,0 +1,242 @@
+@charset "utf-8";
+//引用头部
+@import "../../common/css/header";
+//引用底部
+@import "../../common/css/footer";
+.heng {
+    width: 100%;
+    height: 3px;
+    background: #0E59BA;
+}
+
+body {
+    background: #f5f5f5;
+}
+
+#header {
+    background: #fff;
+}
+
+//小介绍
+.nav_xiao {
+    width: 1100px;
+    margin: 0 auto;
+    line-height: 52px;
+    font-size: 12px;
+    a {
+        color: #333;
+    }
+}
+
+//主体
+.personal {
+    width: 1100px;
+    margin: 0 auto;
+    .clearfix();
+}
+
+.personal_l {
+    width: 200px;
+    height: 700px;
+    background: #fff;
+    .fl();
+}
+
+.personal_l_ul {
+    span {
+        .d-ib();
+        width: 100%;
+        height: 50px;
+        margin-top: 17px;
+        font-weight: bold;
+        font-size: 20px;
+        padding-left: 40px;
+        box-sizing: border-box;
+    }
+    ul {
+        .clearfix();
+    }
+    li {
+        width: 100%;
+        font-size: 16px;
+        line-height: 50px;
+        padding-left: 40px;
+        box-sizing: border-box;
+        cursor: pointer;
+        a {
+            .d-ib();
+            width: 100%;
+            height: 100%;
+            color: #333;
+        }
+    }
+    .juxing {
+        background: url(../images/juxing.png)no-repeat left top #f5f5f5;
+        a {
+            color: #0e59ba;
+            font-weight: bold;
+        }
+    }
+}
+
+.personal_r {
+    width: 880px;
+    height: 700px;
+    background: #fff;
+    .fr();
+}
+
+
+
+.personal_r_x {
+    width: 580px;
+    margin-left: 50px;
+}
+
+.personal_rbox {
+    margin-top: 30px;
+    width: 100%;
+    height: 40px;
+    .pos(r);
+    .td1 {
+        width: 87px;
+        height: 40px;
+        box-sizing: border-box;
+        font-size: 16px;
+        line-height: 40px;
+        padding: 0 20px 0 0;
+        text-align: right;
+        .fl();
+        color: #666666;
+    }
+    .td2 {
+        width: 371px;
+        height: 39px;
+        border: 1px solid #ddd;
+        .fl();
+        .pos(r);
+        input {
+            width: 98%;
+            box-sizing: border-box;
+            padding: 11.5px 10px;
+        }
+        span {
+            display: none;
+            .pos(a);
+            right: 10px;
+            top: 11.5px;
+            width: 16px;
+            height: 16px;
+            background: url(../images/tishi2.png);
+        }
+        #tu,
+        #yan {
+            width: 40%;
+        }
+        .img {
+            width: 100px;
+            height: 34px;
+            margin-top: 2px;
+            margin-right: 2px;
+            .fr();
+        }
+        .text {
+                margin-top: 2px;
+                margin-right: 2px;
+                width: 100px;
+                height: 34px;
+                background: #eeeeee;
+                color: black;
+                .fr();
+                text-align: center;
+                line-height: 34px;
+                .font-s14();
+                cursor: pointer;
+                font-weight: 100;
+            }
+    }
+    .td3 {
+        .pos(a);
+        left: 87px;
+        top: 40px;
+        width: 280px;
+        height: 30px;
+        line-height: 30px;
+        color: red;
+        padding-left: 20px;
+        background: url(../images/tishi.png)no-repeat left center;
+        display: none;
+        font-size: 12px;
+    }
+    #user_name{
+        color: #999;
+    }
+    
+//  单选框
+    .gender{
+        line-height: 39px;
+         .fl();
+         font-size: 16px;
+         .gender1{
+             .fl();
+             margin-top: 13px;
+             margin-left: 10px;
+         }
+          .gender2{
+             .fl();
+             margin-top: 13px;
+             margin-left: 30px;
+         }
+         span{
+             .fl();
+             margin-left: 8px;
+         }
+    }
+//  三级联动
+    .info{
+        .fl();
+        height: 40px;
+        line-height: 40px;
+       
+        select{
+            width: 118px;
+            height: 38px;
+            border: 1px solid #ddd;
+             font-size: 16px;
+             padding: 0 5px;
+             box-sizing: border-box;
+        }
+        #city{
+            margin-left: 5px;
+        }
+        #districtAndCounty{
+            margin-left: 5px;
+        }
+        
+    }
+    
+//  更换手机
+   .aa{
+       line-height: 40px;
+       .fl();
+       margin-left: 10px;
+       color: #0E59BA;
+   }
+    
+    
+    #fasong{
+        width: 200px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        background: #0E59BA;
+        color: #fff;
+        .border-radius(@radius: 3px);
+        cursor: pointer; 
+        font-size: 16px;
+    }
+}
+.kongdiv{
+    width: 100%;
+    height: 40px;
+}

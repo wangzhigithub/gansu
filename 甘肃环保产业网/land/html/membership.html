@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="pragma" content="no-cache">
+		<title>我的信息</title>
+		<link rel="stylesheet" type="text/css" href="../css/membership.css" />
+		<script type="text/javascript" src="../../common/js/jquery-1.8.3.min.js"></script>
+		<script src="../../common/js/sanjishuju.js"></script>
+		<script type="text/javascript" src="../js/membership.js"></script>
+	</head>
+
+	<body ng-app="app">
+		<!--头部-->
+		<div id="header"></div>
+		<!--横线-->
+		<div class="heng"></div>
+
+		<!--小介绍-->
+
+		<div class="nav_xiao">
+			您的位置：
+			<a href="../../pages/html/index.html">首页</a>
+			-
+			<a class="xiehui1">个人中心</a>
+
+		</div>
+
+		<!--主体-->
+		<div class="personal">
+			<div class="personal_l">
+				<div class="personal_l_ul">
+					<span>账号管理</span>
+					<ul>
+						<li>
+							<a href="per_information.html">基本信息</a>
+						</li>
+						<li>
+							<a href="modify_data.html">资料修改</a>
+						</li>
+						<li>
+							<a href="modify_password.html">密码修改</a>
+						</li>
+						<li>
+							<a href="bind_mobile.html">绑定手机</a>
+						</li>
+					</ul>
+				</div>
+				<div class="personal_l_ul">
+					<span>信息管理</span>
+					<ul>
+						<li >
+							<a href="my_news.html">我的消息</a>
+						</li>
+						<li>
+							<a href="my_collection.html">我的收藏</a>
+						</li>
+						<li>
+							<a href="my_download.html">我的下载</a>
+						</li>
+					</ul>
+				</div>
+				<div class="personal_l_ul">
+					<span>协会会员</span>
+					<ul>
+						<li class="juxing">
+							<a>入会申请</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="personal_r">
+				<form action="#" method="post" id="myform">
+					<p>
+						<label>公司名称</label>
+						<input type="text" id="" name="mingcheng" class="text" />
+					</p>
+					<p>
+						<label>公司类型</label>
+						<select name="lxing1" class="mem_seclect mem_seclect1">
+							<option value="">个人</option>
+							<option value="">国企</option>
+							<option value="">私企</option>
+						</select>
+						<select name="lxing2" class="mem_seclect mem_seclect2">
+							<option value="">股份</option>
+							<option value="">股份1</option>
+							<option value="">股份2</option>
+						</select>
+					</p>
+					<p>
+						<label>主营行业</label>
+						<input type="text" id="" name="hangye" class="text" />
+					</p>
+					<p>
+						<label>公司规模</label>
+						<select name="guimo" class="mem_seclect mem_seclect3">
+							<option value="">1-20人</option>
+							<option value="">20-40人</option>
+							<option value="">40-100人</option>
+							<option value="">100人以上</option>
+							<option value="">上市</option>
+						</select>
+
+					</p>
+					<p>
+						<label>注册资本</label>
+						<input type="text" id="" name="ziben" class="text1" />
+						<span>万</span>
+					</p>
+					<p>
+						<label>所在地区</label>
+						<select name="province" id="province" class="mem_seclect ">
+							<option value="">省份</option>
+						</select>
+						<select name="city" id="city" class="mem_seclect ">
+							<option value="">地级市</option>
+						</select>
+						<select name="districtAndCounty" id="districtAndCounty" class="mem_seclect ">
+							<option value="">市、县级市</option>
+						</select>
+					</p>
+                     <p>
+						<label>公司地址</label>
+						<input type="text" id="" name="dizhi" class="text" />
+					</p>
+					 <p>
+						<label>公司电话</label>
+						<input type="text" id="" name="phone" class="text" />
+					</p>
+                     <p>
+						<label>公司传真</label>
+						<input type="text" id="" name="fax" class="text" />
+					</p>
+					<p>
+						<label>公司邮箱</label>
+						<input type="text" id="" name="email" class="text" />
+					</p>
+                    <p class="upload">
+						<label>营业执照</label>
+						<input type="text" id="" name="wangzhi" class="text" disabled="disabled" />
+						<span class="file">
+							[上传]
+							<input type="file" name="" id=""  class="filepath"/>
+						</span>
+						
+						<span class="yulan">[预览]</span>
+						<span class="close">[删除]</span>
+						
+					</p>
+                     <p style="width: 660px;">
+                     	<label>公司介绍</label>
+						<textarea name="introduce" clos="100" rows="5" warp="virtual" class="text2"></textarea>
+                     </p>
+                     
+                     <p>
+                     	<label></label>
+						<input type="submit" value="提交" id="zong_btn" />
+                     </p>
+					
+				</form>
+
+			</div>
+
+		</div>
+		<div class="kongdiv"></div>
+		<!--底部-->
+		<div id="footer"></div>
+		<script>
+			$("#footer").load("../../common/html/footer1.html")
+		</script>
+		<!--图片的位置-->
+		
+		<div class="dd">
+			<div class="dd_h">
+				<div class="dd_close"></div>
+			</div>
+			<div id="dd_img">
+			</div>
+		</div>
+		<div class="Dmid" style="z-index: 998; position: absolute; width: 100%; height: 1496px; overflow: hidden; top: 0px; left: 0px; border: 0px; opacity: 0.5; background-color: rgb(238, 238, 238);"></div>
+	</body>
+
+</html>
